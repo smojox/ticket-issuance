@@ -46,15 +46,33 @@ jobs:
         fi
         chmod +x gradlew
         
-    - name: Build Debug APK
+    - name: Disable Gradle configuration cache for CI
       run: |
         cd android-project
-        ./gradlew assembleDebug --no-daemon
+        echo "org.gradle.configuration-cache=false" >> gradle.properties
+        echo "org.gradle.caching=false" >> gradle.properties
+        
+    - name: Debug project structure
+      run: |
+        cd android-project
+        echo "=== Project Structure ==="
+        ls -la
+        echo "=== App directory ==="
+        ls -la app/
+        echo "=== Build files ==="
+        ls -la *.gradle* || echo "No gradle files found"
+        echo "=== Gradle properties ==="
+        cat gradle.properties
+        
+    - name: Clean and Build Debug APK
+      run: |
+        cd android-project
+        ./gradlew clean assembleDebug --no-daemon --no-build-cache --no-configuration-cache --stacktrace --info
         
     - name: Build Release APK
       run: |
         cd android-project
-        ./gradlew assembleRelease --no-daemon
+        ./gradlew assembleRelease --no-daemon --no-build-cache --no-configuration-cache --stacktrace
         
     - name: Upload Debug APK
       uses: actions/upload-artifact@v4
