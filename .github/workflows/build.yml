@@ -15,79 +15,82 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Set up JDK 17
+    - name: Set up JDK 11
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '11'
         distribution: 'temurin'
         
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       with:
-        api-level: 34
-        target: google_apis
-        arch: x86_64
-        profile: Nexus 6
+        cmdline-tools-version: 11076708
       
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
       with:
-        gradle-version: wrapper
-          
+        cache-disabled: true
+      
     - name: Accept Android SDK licenses
-      run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+      run: |
+        echo "ANDROID_HOME: $ANDROID_HOME"
+        echo "Available cmdline-tools versions:"
+        ls -la $ANDROID_HOME/cmdline-tools/ || echo "No cmdline-tools found"
+        yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
         
-    - name: Validate Gradle wrapper
+    - name: Make gradlew executable
       run: |
         cd android-project
-        if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
-          echo "Wrapper JAR missing, downloading..."
-          curl -L -o gradle/wrapper/gradle-wrapper.jar https://github.com/gradle/gradle/raw/v8.4.0/gradle/wrapper/gradle-wrapper.jar
-        fi
         chmod +x gradlew
         
-    - name: Disable Gradle configuration cache for CI
+    - name: Check Gradle version
       run: |
         cd android-project
-        echo "org.gradle.configuration-cache=false" >> gradle.properties
-        echo "org.gradle.caching=false" >> gradle.properties
+        ./gradlew --version
         
-    - name: Debug project structure
+    - name: List project structure
       run: |
         cd android-project
-        echo "=== Project Structure ==="
+        echo "=== Project Root ==="
         ls -la
         echo "=== App directory ==="
         ls -la app/
-        echo "=== Build files ==="
-        ls -la *.gradle* || echo "No gradle files found"
+        echo "=== App build.gradle ==="
+        head -20 app/build.gradle.kts
         echo "=== Gradle properties ==="
         cat gradle.properties
         
-    - name: Clean and Build Debug APK
+    - name: Clean project
       run: |
         cd android-project
-        ./gradlew clean assembleDebug --no-daemon --no-build-cache --no-configuration-cache --stacktrace --info
+        ./gradlew clean --no-daemon --no-configuration-cache --stacktrace
         
-    - name: Build Release APK
+    - name: Build Debug APK
       run: |
         cd android-project
-        ./gradlew assembleRelease --no-daemon --no-build-cache --no-configuration-cache --stacktrace
+        ./gradlew assembleDebug --no-daemon --no-configuration-cache --stacktrace --info
         
     - name: Upload Debug APK
       uses: actions/upload-artifact@v4
+      if: success()
       with:
         name: app-debug-apk
         path: android-project/app/build/outputs/apk/debug/app-debug.apk
         
+    - name: Build Release APK
+      run: |
+        cd android-project
+        ./gradlew assembleRelease --no-daemon --no-configuration-cache --stacktrace
+        
     - name: Upload Release APK
       uses: actions/upload-artifact@v4
+      if: success()
       with:
         name: app-release-apk
         path: android-project/app/build/outputs/apk/release/app-release-unsigned.apk
         
     - name: Create Release
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main' && success()
       uses: softprops/action-gh-release@v1
       with:
         tag_name: build-${{ github.run_number }}
