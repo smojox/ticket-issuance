@@ -46,7 +46,7 @@ android {
     }
     
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     
     packaging {
@@ -63,8 +63,8 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     
-    // Compose with latest BOM
-    implementation(platform("androidx.compose:compose-bom:2024.06.00"))
+    // Compose with stable BOM
+    implementation(platform("androidx.compose:compose-bom:2024.04.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -111,7 +111,7 @@ dependencies {
     
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.02.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.04.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.48")
     kspAndroidTest("com.google.dagger:hilt-compiler:2.48")
