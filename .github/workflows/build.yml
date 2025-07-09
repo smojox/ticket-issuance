@@ -26,6 +26,11 @@ jobs:
       env:
         SKIP_JDK_VERSION_CHECK: true
       
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: 8.4
+        
     - name: Cache Gradle dependencies
       uses: actions/cache@v4
       with:
@@ -36,6 +41,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gradle-
           
+    - name: Generate Gradle Wrapper
+      run: |
+        cd android-project
+        gradle wrapper --gradle-version 8.4
+        
     - name: Make gradlew executable
       run: |
         cd android-project
