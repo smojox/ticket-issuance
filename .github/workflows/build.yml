@@ -23,13 +23,14 @@ jobs:
         
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
-      env:
-        SKIP_JDK_VERSION_CHECK: true
+      with:
+        api-level: 34
+        target: google_apis
+        arch: x86_64
+        profile: Nexus 6
       
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-      with:
-        gradle-version: 8.4
+      uses: gradle/gradle-build-action@v3
         
     - name: Cache Gradle dependencies
       uses: actions/cache@v4
@@ -41,10 +42,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gradle-
           
-    - name: Generate Gradle Wrapper
-      run: |
-        cd android-project
-        gradle wrapper --gradle-version 8.4
+    - name: Accept Android SDK licenses
+      run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
         
     - name: Make gradlew executable
       run: |
