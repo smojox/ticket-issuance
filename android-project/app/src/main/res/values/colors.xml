@@ -3,12 +3,12 @@
     <!-- Primary theme colors -->
     <color name="primary">#1976D2</color>
     <color name="primary_dark">#1565C0</color>
-    <color name="primary_light">#42A5F5</color>
+    <color name="primary_light">#BBDEFB</color>
     
     <!-- Secondary theme colors -->
     <color name="secondary">#535E70</color>
     <color name="secondary_dark">#3F4A58</color>
-    <color name="secondary_light">#7A8696</color>
+    <color name="secondary_light">#CFD8DC</color>
     
     <!-- Error colors -->
     <color name="error">#D32F2F</color>
