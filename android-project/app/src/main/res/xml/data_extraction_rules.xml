@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive data from cloud backups -->
+        <exclude domain="sharedpref" path="user_session.xml" />
+        <exclude domain="database" path="ceo_tickets_database" />
+        <exclude domain="external" path="photos/" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow device transfers but exclude sensitive data -->
+        <exclude domain="sharedpref" path="user_session.xml" />
+        <exclude domain="database" path="ceo_tickets_database" />
+    </device-transfer>
+</data-extraction-rules>

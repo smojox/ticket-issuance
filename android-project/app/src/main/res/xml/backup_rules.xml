@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive data from backups -->
+    <exclude domain="sharedpref" path="user_session.xml" />
+    <exclude domain="database" path="ceo_tickets_database" />
+    <exclude domain="external" path="photos/" />
+</full-backup-content>

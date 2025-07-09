@@ -58,11 +58,13 @@
                 android:value="enforcement_timer" />
         </service>
         
-        <!-- Sync service for queue management -->
+        <!-- Sync service for queue management (Phase 7) -->
+        <!-- 
         <service
             android:name=".core.service.SyncService"
             android:enabled="true"
             android:exported="false" />
+        -->
         
     </application>
 
