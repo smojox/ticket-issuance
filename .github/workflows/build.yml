@@ -30,24 +30,20 @@ jobs:
         profile: Nexus 6
       
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v3
-        
-    - name: Cache Gradle dependencies
-      uses: actions/cache@v4
+      uses: gradle/actions/setup-gradle@v3
       with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
+        gradle-version: wrapper
           
     - name: Accept Android SDK licenses
       run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
         
-    - name: Make gradlew executable
+    - name: Validate Gradle wrapper
       run: |
         cd android-project
+        if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
+          echo "Wrapper JAR missing, downloading..."
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://github.com/gradle/gradle/raw/v8.4.0/gradle/wrapper/gradle-wrapper.jar
+        fi
         chmod +x gradlew
         
     - name: Build Debug APK
