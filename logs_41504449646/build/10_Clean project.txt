@@ -1,0 +1,40 @@
+﻿2025-07-10T14:46:05.5204090Z ##[group]Run cd android-project
+2025-07-10T14:46:05.5204380Z [36;1mcd android-project[0m
+2025-07-10T14:46:05.5204706Z [36;1m./gradlew clean --no-daemon --no-configuration-cache --stacktrace[0m
+2025-07-10T14:46:05.5255609Z shell: /usr/bin/bash -e {0}
+2025-07-10T14:46:05.5255836Z env:
+2025-07-10T14:46:05.5256116Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T14:46:05.5256568Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T14:46:05.5256937Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-10T14:46:05.5257200Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-10T14:46:05.5257478Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2025-07-10T14:46:05.5257754Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2025-07-10T14:46:05.5258009Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2025-07-10T14:46:05.5258401Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2025-07-10T14:46:05.5258838Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2025-07-10T14:46:05.5259173Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2025-07-10T14:46:05.5259622Z ##[endgroup]
+2025-07-10T14:46:06.2042638Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.4/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2025-07-10T14:46:07.4035149Z Daemon will be stopped at the end of the build 
+2025-07-10T14:46:07.7034970Z Configuration on demand is an incubating feature.
+2025-07-10T14:47:13.7044829Z 
+2025-07-10T14:47:13.7119926Z > Configure project :
+2025-07-10T14:47:13.7123731Z w: file:///home/runner/work/ticket-issuance/ticket-issuance/android-project/build.gradle.kts:10:24: 'getter for buildDir: File!' is deprecated. Deprecated in Java
+2025-07-10T14:47:18.1034073Z 
+2025-07-10T14:47:18.1038429Z > Configure project :app
+2025-07-10T14:47:18.1043198Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.1047224Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.2044049Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.2051684Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3037226Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3041407Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3042690Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3045975Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3047867Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.3049014Z ksp-1.9.24-1.0.20 is too new for kotlin-1.9.23. Please upgrade kotlin-gradle-plugin to 1.9.24.
+2025-07-10T14:47:18.5032645Z 
+2025-07-10T14:47:18.5037805Z > Task :clean UP-TO-DATE
+2025-07-10T14:47:18.5046077Z > Task :app:clean UP-TO-DATE
+2025-07-10T14:47:18.5927896Z 
+2025-07-10T14:47:18.5935984Z BUILD SUCCESSFUL in 1m 12s
+2025-07-10T14:47:18.5940597Z 2 actionable tasks: 2 up-to-date
