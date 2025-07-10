@@ -27,7 +27,7 @@ class TicketPrintingService @Inject constructor(
             
             if (printManager == null) {
                 onPrintFailed("Print service not available")
-                return Result.Error("Print service not available")
+                return Result.Error(Exception("Print service not available"))
             }
             
             val printAdapter = TicketPrintDocumentAdapter(
@@ -54,7 +54,7 @@ class TicketPrintingService @Inject constructor(
             Result.Success(Unit)
         } catch (e: Exception) {
             onPrintFailed(e.message ?: "Print failed")
-            Result.Error(e.message ?: "Print failed")
+            Result.Error(Exception(e.message ?: "Print failed"))
         }
     }
     
@@ -64,7 +64,7 @@ class TicketPrintingService @Inject constructor(
     ): Result<Unit> {
         // TODO: Implement Bluetooth printing for mobile printers
         // This would integrate with mobile thermal printers commonly used by enforcement officers
-        return Result.Error("Bluetooth printing not implemented yet")
+        return Result.Error(Exception("Bluetooth printing not implemented yet"))
     }
     
     fun isBluetoothPrinterAvailable(): Boolean {

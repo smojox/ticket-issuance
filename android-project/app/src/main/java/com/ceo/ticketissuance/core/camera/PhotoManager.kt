@@ -64,7 +64,7 @@ class PhotoManager @Inject constructor(
                 }
                 
                 override fun onError(exception: ImageCaptureException) {
-                    continuation.resume(Result.Error(exception.message ?: "Photo capture failed"))
+                    continuation.resume(Result.Error(Exception(exception.message ?: "Photo capture failed")))
                 }
             }
         )
@@ -125,7 +125,7 @@ class PhotoManager @Inject constructor(
             
             Result.Success(compressedFile)
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Photo compression failed")
+            Result.Error(Exception(e.message ?: "Photo compression failed"))
         }
     }
     
@@ -144,7 +144,7 @@ class PhotoManager @Inject constructor(
             
             Result.Success(rotatedFile)
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Photo rotation failed")
+            Result.Error(Exception(e.message ?: "Photo rotation failed"))
         }
     }
     

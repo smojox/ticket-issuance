@@ -320,7 +320,7 @@ class ObservationTimerService : Service() {
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("Observation Timer - ${timer.plateNumber}")
             .setContentText("$timeText remaining")
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(R.mipmap.ic_launcher)
             .setContentIntent(pendingIntent)
             .setOngoing(true)
             .setOnlyAlertOnce(true)
@@ -335,13 +335,13 @@ class ObservationTimerService : Service() {
         // Add action buttons if timer is active
         if (timer.isActive) {
             builder.addAction(
-                if (timer.isPaused) R.drawable.ic_launcher_foreground else R.drawable.ic_launcher_foreground,
+                if (timer.isPaused) R.mipmap.ic_launcher else R.mipmap.ic_launcher,
                 if (timer.isPaused) "Resume" else "Pause",
                 pausePendingIntent
             )
             
             builder.addAction(
-                R.drawable.ic_launcher_foreground,
+                R.mipmap.ic_launcher,
                 "Stop",
                 stopPendingIntent
             )
@@ -390,14 +390,14 @@ class ObservationTimerService : Service() {
         val notification = NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("⏰ Observation Complete")
             .setContentText("$plateNumber - Ready for ticket issuance")
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(R.mipmap.ic_launcher)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setCategory(NotificationCompat.CATEGORY_ALARM)
             .setColor(android.graphics.Color.RED)
             .addAction(
-                R.drawable.ic_launcher_foreground,
+                R.mipmap.ic_launcher,
                 "Issue Ticket",
                 ticketPendingIntent
             )
