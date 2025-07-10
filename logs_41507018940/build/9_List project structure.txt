@@ -1,0 +1,115 @@
+﻿2025-07-10T15:23:23.3194964Z ##[group]Run cd android-project
+2025-07-10T15:23:23.3195562Z [36;1mcd android-project[0m
+2025-07-10T15:23:23.3196030Z [36;1mecho "=== Project Root ==="[0m
+2025-07-10T15:23:23.3196529Z [36;1mls -la[0m
+2025-07-10T15:23:23.3196941Z [36;1mecho "=== App directory ==="[0m
+2025-07-10T15:23:23.3197476Z [36;1mls -la app/[0m
+2025-07-10T15:23:23.3197928Z [36;1mecho "=== App build.gradle ==="[0m
+2025-07-10T15:23:23.3198510Z [36;1mhead -20 app/build.gradle.kts[0m
+2025-07-10T15:23:23.3199094Z [36;1mecho "=== Gradle properties ==="[0m
+2025-07-10T15:23:23.3199637Z [36;1mcat gradle.properties[0m
+2025-07-10T15:23:23.3284966Z shell: /usr/bin/bash -e {0}
+2025-07-10T15:23:23.3285442Z env:
+2025-07-10T15:23:23.3286031Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:23:23.3287004Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:23:23.3287735Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-10T15:23:23.3288287Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-10T15:23:23.3288934Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2025-07-10T15:23:23.3289566Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2025-07-10T15:23:23.3290104Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2025-07-10T15:23:23.3290974Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2025-07-10T15:23:23.3291979Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2025-07-10T15:23:23.3292627Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2025-07-10T15:23:23.3293308Z ##[endgroup]
+2025-07-10T15:23:23.3380745Z === Project Root ===
+2025-07-10T15:23:23.3396742Z total 116
+2025-07-10T15:23:23.3397381Z drwxr-xr-x 4 runner docker  4096 Jul 10 15:22 .
+2025-07-10T15:23:23.3398222Z drwxr-xr-x 7 runner docker  4096 Jul 10 15:22 ..
+2025-07-10T15:23:23.3399525Z -rw-r--r-- 1 runner docker  5068 Jul 10 15:22 BUILD_TROUBLESHOOTING.md
+2025-07-10T15:23:23.3400629Z -rw-r--r-- 1 runner docker  6652 Jul 10 15:22 PHASE_1_COMPLETE.md
+2025-07-10T15:23:23.3401666Z -rw-r--r-- 1 runner docker  3772 Jul 10 15:22 PHASE_1_SUMMARY.md
+2025-07-10T15:23:23.3402714Z -rw-r--r-- 1 runner docker  8518 Jul 10 15:22 PHASE_2_COMPLETE.md
+2025-07-10T15:23:23.3403940Z -rw-r--r-- 1 runner docker  6974 Jul 10 15:22 PHASE_3_COMPLETE.md
+2025-07-10T15:23:23.3404974Z -rw-r--r-- 1 runner docker  9043 Jul 10 15:22 PHASE_4_COMPLETE.md
+2025-07-10T15:23:23.3406034Z -rw-r--r-- 1 runner docker 10619 Jul 10 15:22 PHASE_5_COMPLETE.md
+2025-07-10T15:23:23.3407006Z drwxr-xr-x 3 runner docker  4096 Jul 10 15:22 app
+2025-07-10T15:23:23.3408030Z -rwxr-xr-x 1 runner docker  4446 Jul 10 15:22 build-health-check.sh
+2025-07-10T15:23:23.3409049Z -rw-r--r-- 1 runner docker   447 Jul 10 15:22 build.gradle.kts
+2025-07-10T15:23:23.3409884Z drwxr-xr-x 3 runner docker  4096 Jul 10 15:22 gradle
+2025-07-10T15:23:23.3410798Z -rw-r--r-- 1 runner docker  1795 Jul 10 15:22 gradle.properties
+2025-07-10T15:23:23.3411556Z -rwxr-xr-x 1 runner docker  8494 Jul 10 15:22 gradlew
+2025-07-10T15:23:23.3412337Z -rw-r--r-- 1 runner docker  2746 Jul 10 15:22 gradlew.bat
+2025-07-10T15:23:23.3413395Z -rw-r--r-- 1 runner docker   338 Jul 10 15:22 settings.gradle.kts
+2025-07-10T15:23:23.3414107Z === App directory ===
+2025-07-10T15:23:23.3414520Z total 24
+2025-07-10T15:23:23.3415045Z drwxr-xr-x 3 runner docker 4096 Jul 10 15:22 .
+2025-07-10T15:23:23.3415795Z drwxr-xr-x 4 runner docker 4096 Jul 10 15:22 ..
+2025-07-10T15:23:23.3416649Z -rw-r--r-- 1 runner docker 4989 Jul 10 15:22 build.gradle.kts
+2025-07-10T15:23:23.3417573Z -rw-r--r-- 1 runner docker 2064 Jul 10 15:22 proguard-rules.pro
+2025-07-10T15:23:23.3418384Z drwxr-xr-x 3 runner docker 4096 Jul 10 15:22 src
+2025-07-10T15:23:23.3419027Z === App build.gradle ===
+2025-07-10T15:23:23.3428432Z plugins {
+2025-07-10T15:23:23.3429152Z     id("com.android.application")
+2025-07-10T15:23:23.3430022Z     id("org.jetbrains.kotlin.android")
+2025-07-10T15:23:23.3430674Z     id("com.google.dagger.hilt.android")
+2025-07-10T15:23:23.3431278Z     id("com.google.devtools.ksp")
+2025-07-10T15:23:23.3432087Z }
+2025-07-10T15:23:23.3432260Z 
+2025-07-10T15:23:23.3432399Z android {
+2025-07-10T15:23:23.3433072Z     namespace = "com.ceo.ticketissuance"
+2025-07-10T15:23:23.3433624Z     compileSdk = 34
+2025-07-10T15:23:23.3433868Z 
+2025-07-10T15:23:23.3434063Z     defaultConfig {
+2025-07-10T15:23:23.3434603Z         applicationId = "com.ceo.ticketissuance"
+2025-07-10T15:23:23.3435143Z         minSdk = 24
+2025-07-10T15:23:23.3435567Z         targetSdk = 34
+2025-07-10T15:23:23.3436024Z         versionCode = 1
+2025-07-10T15:23:23.3436505Z         versionName = "1.0"
+2025-07-10T15:23:23.3436772Z 
+2025-07-10T15:23:23.3437346Z         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+2025-07-10T15:23:23.3438140Z         vectorDrawables {
+2025-07-10T15:23:23.3438629Z === Gradle properties ===
+2025-07-10T15:23:23.3443979Z # Project-wide Gradle settings.
+2025-07-10T15:23:23.3444570Z # IDE (e.g. Android Studio) users:
+2025-07-10T15:23:23.3445238Z # Gradle settings configured through the IDE *will override*
+2025-07-10T15:23:23.3445931Z # any settings specified in this file.
+2025-07-10T15:23:23.3446673Z # For more details on how to configure your build environment visit
+2025-07-10T15:23:23.3447587Z # http://www.gradle.org/docs/current/userguide/build_environment.html
+2025-07-10T15:23:23.3448087Z 
+2025-07-10T15:23:23.3448471Z # Specifies the JVM arguments used for the daemon process.
+2025-07-10T15:23:23.3449331Z # The setting is particularly useful for tweaking memory settings.
+2025-07-10T15:23:23.3450293Z org.gradle.jvmargs=-Xmx3072m -Dfile.encoding=UTF-8 -XX:MaxMetaspaceSize=512m
+2025-07-10T15:23:23.3450822Z 
+2025-07-10T15:23:23.3451245Z # When configured, Gradle will run in incubating parallel mode.
+2025-07-10T15:23:23.3452155Z # This option should only be used with decoupled projects. More details, visit
+2025-07-10T15:23:23.3453801Z # http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+2025-07-10T15:23:23.3454692Z # org.gradle.parallel=true
+2025-07-10T15:23:23.3455164Z # org.gradle.workers.max=2
+2025-07-10T15:23:23.3455428Z 
+2025-07-10T15:23:23.3455973Z # AndroidX package structure to make it clearer which packages are bundled with the
+2025-07-10T15:23:23.3457005Z # Android operating system, and which are packaged with your app's APK
+2025-07-10T15:23:23.3457999Z # https://developer.android.com/topic/libraries/support-library/androidx-rn
+2025-07-10T15:23:23.3458728Z android.useAndroidX=true
+2025-07-10T15:23:23.3458970Z 
+2025-07-10T15:23:23.3459393Z # Kotlin code style for this project: "official" or "obsolete":
+2025-07-10T15:23:23.3460026Z kotlin.code.style=official
+2025-07-10T15:23:23.3460288Z 
+2025-07-10T15:23:23.3460880Z # Enables namespacing of each library's R class so that its R class includes only the
+2025-07-10T15:23:23.3462054Z # resources declared in the library itself and none from the library's dependencies,
+2025-07-10T15:23:23.3463211Z # thereby reducing the size of the R class for that library
+2025-07-10T15:23:23.3463831Z android.nonTransitiveRClass=true
+2025-07-10T15:23:23.3464141Z 
+2025-07-10T15:23:23.3464481Z # Disable Gradle Configuration Cache for CI stability
+2025-07-10T15:23:23.3465165Z org.gradle.configuration-cache=false
+2025-07-10T15:23:23.3465483Z 
+2025-07-10T15:23:23.3465706Z # Disable build cache for CI builds
+2025-07-10T15:23:23.3466204Z org.gradle.caching=false
+2025-07-10T15:23:23.3466453Z 
+2025-07-10T15:23:23.3466700Z # Memory optimization for CI builds
+2025-07-10T15:23:23.3467226Z org.gradle.daemon=false
+2025-07-10T15:23:23.3467781Z org.gradle.configureondemand=true
+2025-07-10T15:23:23.3468109Z 
+2025-07-10T15:23:23.3468406Z # KSP Configuration - Disabled for CI stability
+2025-07-10T15:23:23.3468937Z ksp.incremental=false
+2025-07-10T15:23:23.3469376Z ksp.incremental.intermodule=false
+2025-07-10T15:23:23.3469876Z ksp.use.worker.api=false
