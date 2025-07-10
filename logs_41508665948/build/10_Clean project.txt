@@ -1,0 +1,28 @@
+﻿2025-07-10T15:48:40.1577273Z ##[group]Run cd android-project
+2025-07-10T15:48:40.1577569Z [36;1mcd android-project[0m
+2025-07-10T15:48:40.1577911Z [36;1m./gradlew clean --no-daemon --no-configuration-cache --stacktrace[0m
+2025-07-10T15:48:40.1629123Z shell: /usr/bin/bash -e {0}
+2025-07-10T15:48:40.1629359Z env:
+2025-07-10T15:48:40.1629636Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:48:40.1630096Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:48:40.1630472Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-10T15:48:40.1630743Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-10T15:48:40.1631022Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2025-07-10T15:48:40.1631300Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2025-07-10T15:48:40.1631565Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2025-07-10T15:48:40.1631950Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2025-07-10T15:48:40.1632398Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2025-07-10T15:48:40.1632729Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2025-07-10T15:48:40.1632960Z ##[endgroup]
+2025-07-10T15:48:40.8456887Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.4/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2025-07-10T15:48:42.1438324Z Daemon will be stopped at the end of the build 
+2025-07-10T15:48:42.4415620Z Configuration on demand is an incubating feature.
+2025-07-10T15:50:30.5423742Z 
+2025-07-10T15:50:30.5445478Z > Configure project :
+2025-07-10T15:50:30.5482909Z w: file:///home/runner/work/ticket-issuance/ticket-issuance/android-project/build.gradle.kts:10:24: 'getter for buildDir: File!' is deprecated. Deprecated in Java
+2025-07-10T15:50:35.1467236Z 
+2025-07-10T15:50:35.1468181Z > Task :clean UP-TO-DATE
+2025-07-10T15:50:35.1468949Z > Task :app:clean UP-TO-DATE
+2025-07-10T15:50:35.3173496Z 
+2025-07-10T15:50:35.3175621Z BUILD SUCCESSFUL in 1m 55s
+2025-07-10T15:50:35.3176203Z 2 actionable tasks: 2 up-to-date

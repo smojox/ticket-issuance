@@ -36,44 +36,44 @@ class GenerateTicketUseCase @Inject constructor(
     ): Result<TicketGenerationResult> {
         return try {
             // Get current user
-            val currentUser = sessionManager.getCurrentUser()
-                ?: return Result.Error("User not authenticated")
+            val currentUser = sessionManager.currentUser.value
+                ?: return Result.Error(Exception("User not authenticated"))
             
             // Get observation details
             val observation = when (val result = observationRepository.getObservationById(observationId)) {
                 is Result.Success -> result.data
-                is Result.Error -> return Result.Error(result.message)
+                is Result.Error -> return Result.Error(Exception("Observation not found"))
+                is Result.Loading -> return Result.Error(Exception("Loading observation data"))
             }
             
             // Validate observation status
-            if (observation.status != ObservationStatus.READY_FOR_TICKET && 
-                observation.status != ObservationStatus.PENDING_TICKET) {
-                return Result.Error("Observation is not ready for ticket issuance")
+            if (observation.status != ObservationStatus.COMPLETED) {
+                return Result.Error(Exception("Observation is not ready for ticket issuance"))
             }
             
             // Get related data
             val street = when (val result = streetRepository.getStreetById(observation.streetId)) {
                 is Result.Success -> result.data
-                is Result.Error -> return Result.Error("Street not found: ${result.message}")
+                is Result.Error -> return Result.Error(Exception("Street not found"))
+                is Result.Loading -> return Result.Error(Exception("Loading street data"))
             }
             
             val contravention = when (val result = contraventionRepository.getContraventionById(observation.contraventionId)) {
                 is Result.Success -> result.data
-                is Result.Error -> return Result.Error("Contravention not found: ${result.message}")
+                is Result.Error -> return Result.Error(Exception("Contravention not found"))
+                is Result.Loading -> return Result.Error(Exception("Loading contravention data"))
             }
             
-            val vehicleMake = observation.vehicleMakeId?.let { makeId ->
-                when (val result = vehicleRepository.getVehicleMakeById(makeId)) {
-                    is Result.Success -> result.data
-                    is Result.Error -> null
-                }
+            val vehicleMake = when (val result = vehicleRepository.getVehicleMakeById(observation.makeId)) {
+                is Result.Success -> result.data
+                is Result.Error -> null
+                is Result.Loading -> null
             }
             
-            val vehicleModel = observation.vehicleModelId?.let { modelId ->
-                when (val result = vehicleRepository.getVehicleModelById(modelId)) {
-                    is Result.Success -> result.data
-                    is Result.Error -> null
-                }
+            val vehicleModel = when (val result = vehicleRepository.getVehicleModelById(observation.modelId)) {
+                is Result.Success -> result.data
+                is Result.Error -> null
+                is Result.Loading -> null
             }
             
             // Generate TMA 2004 compliant ticket number
@@ -91,14 +91,14 @@ class GenerateTicketUseCase @Inject constructor(
                 contraventionId = observation.contraventionId,
                 makeId = vehicleMake?.id ?: 0,
                 modelId = vehicleModel?.id ?: 0,
-                color = observation.vehicleColour ?: "Unknown",
-                valvePositionFront = null, // TODO: Add valve position fields to observation
-                valvePositionRear = null,
+                color = "Unknown", // Vehicle color not stored in observation
+                valvePositionFront = observation.valvePositionFront,
+                valvePositionRear = observation.valvePositionRear,
                 observationId = observationId,
                 issueTime = LocalDateTime.now(),
                 penaltyAmount = penaltyAmount,
                 discountAmount = discountAmount,
-                photoPath = observation.photoFilename,
+                photoPath = observation.photoPath,
                 notes = buildTicketNotes(observation, additionalNotes),
                 status = TicketStatus.ISSUED,
                 userId = currentUser.id,
@@ -109,13 +109,14 @@ class GenerateTicketUseCase @Inject constructor(
             // Save ticket
             val ticketId = when (val result = ticketRepository.insertTicket(ticket)) {
                 is Result.Success -> result.data
-                is Result.Error -> return Result.Error("Failed to save ticket: ${result.message}")
+                is Result.Error -> return Result.Error(Exception("Failed to save ticket"))
+                is Result.Loading -> return Result.Error(Exception("Saving ticket"))
             }
             
             // Update observation status
             val updatedObservation = observation.copy(
-                status = ObservationStatus.TICKET_ISSUED,
-                notes = "${observation.notes}\n\nTicket issued: $ticketNumber at ${LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))}"
+                status = ObservationStatus.COMPLETED,
+                updatedAt = LocalDateTime.now()
             )
             
             when (val result = observationRepository.updateObservation(updatedObservation)) {
@@ -136,11 +137,12 @@ class GenerateTicketUseCase @Inject constructor(
                         )
                     )
                 }
-                is Result.Error -> Result.Error("Failed to update observation: ${result.message}")
+                is Result.Error -> Result.Error(Exception("Failed to update observation"))
+                is Result.Loading -> Result.Error(Exception("Updating observation"))
             }
             
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Failed to generate ticket")
+            Result.Error(Exception(e.message ?: "Failed to generate ticket"))
         }
     }
     
@@ -163,29 +165,12 @@ class GenerateTicketUseCase @Inject constructor(
     private fun buildTicketNotes(observation: Observation, additionalNotes: String): String {
         val notes = StringBuilder()
         
-        // Add observation notes
-        if (observation.notes.isNotBlank()) {
-            notes.append("Observation Notes:\n${observation.notes}\n\n")
-        }
-        
         // Add observation details
         notes.append("Observation Details:\n")
-        notes.append("- Start Time: ${observation.countdownStartTime?.let { 
-            LocalDateTime.ofInstant(java.time.Instant.ofEpochMilli(it), java.time.ZoneId.systemDefault())
-                .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-        } ?: "N/A"}\n")
-        notes.append("- End Time: ${observation.countdownEndTime?.let { 
-            LocalDateTime.ofInstant(java.time.Instant.ofEpochMilli(it), java.time.ZoneId.systemDefault())
-                .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-        } ?: "N/A"}\n")
-        notes.append("- Location: ${observation.location}\n")
-        
-        // Add vehicle details
-        if (observation.vehicleMake != null || observation.vehicleModel != null || observation.vehicleColour != null) {
-            notes.append("\nVehicle Details:\n")
-            observation.vehicleMake?.let { notes.append("- Make: $it\n") }
-            observation.vehicleModel?.let { notes.append("- Model: $it\n") }
-            observation.vehicleColour?.let { notes.append("- Colour: $it\n") }
+        notes.append("- VRM: ${observation.vrm}\n")
+        notes.append("- Start Time: ${observation.observationStartTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))}\n")
+        observation.observationEndTime?.let {
+            notes.append("- End Time: ${it.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))}\n")
         }
         
         // Add additional notes
