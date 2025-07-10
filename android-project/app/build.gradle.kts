@@ -20,6 +20,16 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        
+        // Room schema export directory
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += mapOf(
+                    "room.schemaLocation" to "$projectDir/schemas",
+                    "room.incremental" to "true"
+                )
+            }
+        }
     }
 
     buildTypes {
@@ -35,10 +45,16 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
     }
     
     kotlinOptions {
         jvmTarget = "17"
+        freeCompilerArgs += listOf(
+            "-opt-in=kotlin.RequiresOptIn",
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+            "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi"
+        )
     }
     
     buildFeatures {
@@ -81,6 +97,7 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.48")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
     ksp("com.google.dagger:hilt-compiler:2.48")
+    ksp("androidx.hilt:hilt-compiler:1.1.0")
     
     // Camera and ML Kit (for future phases)
     implementation("androidx.camera:camera-camera2:1.3.1")
@@ -102,6 +119,9 @@ dependencies {
     
     // Date and Time
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+    
+    // Core library desugaring for Java 8+ features
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
     
     // Testing
     testImplementation("junit:junit:4.13.2")

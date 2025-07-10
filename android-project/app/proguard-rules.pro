@@ -45,3 +45,21 @@
 -keep class * implements com.google.gson.TypeAdapterFactory
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer
+
+# Keep TypeConverters for Room
+-keep class * extends androidx.room.TypeConverter
+
+# Keep coroutines
+-keepclassmembernames class kotlinx.** {
+    volatile <fields>;
+}
+
+# Keep Android components
+-keep class * extends android.app.Application
+-keep class * extends android.app.Service
+-keep class * extends android.content.BroadcastReceiver
+
+# Keep KSP generated classes
+-keep class **.*_Impl { *; }
+-keep class **.*_Factory { *; }
+-keep class **.*_MembersInjector { *; }
