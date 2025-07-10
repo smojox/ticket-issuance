@@ -35,7 +35,7 @@ import com.ceo.ticketissuance.data.database.entity.VehicleModelEntity
         SyncQueueEntity::class
     ],
     version = 1,
-    exportSchema = false
+    exportSchema = true
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {

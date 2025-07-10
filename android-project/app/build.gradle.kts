@@ -57,6 +57,11 @@ android {
         )
     }
     
+    // Room schema export directory
+    ksp {
+        arg("room.schemaLocation", "$projectDir/schemas")
+    }
+    
     buildFeatures {
         compose = true
     }
@@ -65,9 +70,11 @@ android {
         kotlinCompilerExtensionVersion = "1.5.11"
     }
     
+    // Packaging options to prevent duplicates
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/gradle/incremental.annotation.processors"
         }
     }
 }
