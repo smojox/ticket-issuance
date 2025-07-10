@@ -36,7 +36,7 @@ class ObservationRepositoryImpl @Inject constructor(
             timerStorage[timer.observationId] = timer
             Result.Success(Unit)
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Error updating timer")
+            Result.Error(Exception(e.message ?: "Error updating timer"))
         }
     }
     
@@ -45,7 +45,7 @@ class ObservationRepositoryImpl @Inject constructor(
             val timer = timerStorage[observationId]
             Result.Success(timer)
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Error retrieving timer")
+            Result.Error(Exception(e.message ?: "Error retrieving timer"))
         }
     }
     

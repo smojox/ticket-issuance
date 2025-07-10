@@ -1,0 +1,28 @@
+﻿2025-07-10T15:35:45.2648886Z ##[group]Run gradle/actions/setup-gradle@v3
+2025-07-10T15:35:45.2649188Z with:
+2025-07-10T15:35:45.2649359Z   cache-disabled: true
+2025-07-10T15:35:45.2649564Z   cache-read-only: false
+2025-07-10T15:35:45.2649767Z   cache-write-only: false
+2025-07-10T15:35:45.2649983Z   cache-overwrite-existing: false
+2025-07-10T15:35:45.2650271Z   gradle-home-cache-includes: caches
+notifications
+
+2025-07-10T15:35:45.2650564Z   gradle-home-cache-cleanup: false
+2025-07-10T15:35:45.2650800Z   add-job-summary: always
+2025-07-10T15:35:45.2651027Z   add-job-summary-as-pr-comment: never
+2025-07-10T15:35:45.2651288Z   dependency-graph: disabled
+2025-07-10T15:35:45.2651532Z   dependency-graph-continue-on-failure: true
+2025-07-10T15:35:45.2651806Z   build-scan-publish: false
+2025-07-10T15:35:45.2652387Z   validate-wrappers: false
+2025-07-10T15:35:45.2652615Z   generate-job-summary: true
+2025-07-10T15:35:45.2652852Z   gradle-home-cache-strict-match: false
+2025-07-10T15:35:45.2653099Z   workflow-job-context: null
+2025-07-10T15:35:45.2653472Z   github-token: ***
+2025-07-10T15:35:45.2653653Z env:
+2025-07-10T15:35:45.2653912Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:35:45.2654350Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:35:45.2654707Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-10T15:35:45.2654965Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-10T15:35:45.2655208Z ##[endgroup]
+2025-07-10T15:35:45.5704806Z Cache is disabled: will not restore state from previous builds.
+2025-07-10T15:35:45.5719500Z Merged default JDK locations into /home/runner/.m2/toolchains.xml

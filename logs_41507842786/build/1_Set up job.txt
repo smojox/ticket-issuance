@@ -1,0 +1,46 @@
+﻿2025-07-10T15:35:22.7660558Z Current runner version: '2.325.0'
+2025-07-10T15:35:22.7687730Z ##[group]Runner Image Provisioner
+2025-07-10T15:35:22.7688534Z Hosted Compute Agent
+2025-07-10T15:35:22.7689180Z Version: 20250620.352
+2025-07-10T15:35:22.7689771Z Commit: f262f3aba23b10ea191b2a62bdee1ca4c3d344da
+2025-07-10T15:35:22.7690473Z Build Date: 2025-06-20T19:27:17Z
+2025-07-10T15:35:22.7691125Z ##[endgroup]
+2025-07-10T15:35:22.7691653Z ##[group]Operating System
+2025-07-10T15:35:22.7692584Z Ubuntu
+2025-07-10T15:35:22.7693125Z 24.04.2
+2025-07-10T15:35:22.7693623Z LTS
+2025-07-10T15:35:22.7694048Z ##[endgroup]
+2025-07-10T15:35:22.7694611Z ##[group]Runner Image
+2025-07-10T15:35:22.7695196Z Image: ubuntu-24.04
+2025-07-10T15:35:22.7695723Z Version: 20250629.1.0
+2025-07-10T15:35:22.7696745Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250629.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-07-10T15:35:22.7698064Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250629.1
+2025-07-10T15:35:22.7699241Z ##[endgroup]
+2025-07-10T15:35:22.7700339Z ##[group]GITHUB_TOKEN Permissions
+2025-07-10T15:35:22.7702688Z Contents: read
+2025-07-10T15:35:22.7703284Z Metadata: read
+2025-07-10T15:35:22.7703757Z Packages: read
+2025-07-10T15:35:22.7704296Z ##[endgroup]
+2025-07-10T15:35:22.7706639Z Secret source: Actions
+2025-07-10T15:35:22.7707340Z Prepare workflow directory
+2025-07-10T15:35:22.8037474Z Prepare all required actions
+2025-07-10T15:35:22.8076200Z Getting action download info
+2025-07-10T15:35:23.1976911Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-07-10T15:35:23.1978093Z Version: 4.2.2
+2025-07-10T15:35:23.1979134Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-07-10T15:35:23.1980470Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-07-10T15:35:23.1981260Z ##[endgroup]
+2025-07-10T15:35:23.2822363Z ##[group]Download immutable action package 'actions/setup-java@v4'
+2025-07-10T15:35:23.2823348Z Version: 4.7.1
+2025-07-10T15:35:23.2824200Z Digest: sha256:23223d64943473efb4336f60463c0429cd4f422cd5fc6c48a5cf0d5907c1aeac
+2025-07-10T15:35:23.2825272Z Source commit SHA: c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+2025-07-10T15:35:23.2826045Z ##[endgroup]
+2025-07-10T15:35:23.6095636Z Download action repository 'android-actions/setup-android@v3' (SHA:9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407)
+2025-07-10T15:35:23.8792715Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
+2025-07-10T15:35:24.5448403Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-07-10T15:35:24.5449655Z Version: 4.6.2
+2025-07-10T15:35:24.5450705Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-07-10T15:35:24.5452568Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-07-10T15:35:24.5453679Z ##[endgroup]
+2025-07-10T15:35:24.6572872Z Download action repository 'softprops/action-gh-release@v1' (SHA:de2c0eb89ae2a093876385947365aca7b0e5f844)
+2025-07-10T15:35:24.9820164Z Complete job name: build

@@ -19,42 +19,43 @@ class CreateObservationUseCase @Inject constructor(
     suspend operator fun invoke(
         plateNumber: String,
         streetId: Long,
-        photoFilename: String?,
-        notes: String = "",
-        location: String = ""
+        contraventionId: Long,
+        makeId: Long,
+        modelId: Long,
+        photoFilename: String?
     ): Result<Long> {
         return try {
-            val currentUser = sessionManager.getCurrentUser()
-                ?: return Result.Error("No user logged in")
+            val currentUser = sessionManager.currentUser.value
+                ?: return Result.Error(Exception("No user logged in"))
             
             // Get street information
             val street = when (val streetResult = streetRepository.getStreetById(streetId)) {
                 is Result.Success -> streetResult.data
-                is Result.Error -> return Result.Error("Street not found")
+                is Result.Error -> return Result.Error(Exception("Street not found"))
+                is Result.Loading -> return Result.Error(Exception("Loading street data"))
             }
             
             val observation = Observation(
                 id = 0, // Will be assigned by database
-                userId = currentUser.id,
                 vrm = plateNumber,
                 streetId = streetId,
-                streetName = street.name,
-                location = location.ifEmpty { street.name },
-                vehicleMake = null, // Will be filled when vehicle is identified
-                vehicleModel = null,
-                vehicleColour = null,
-                observationTime = System.currentTimeMillis(),
+                contraventionId = contraventionId,
+                makeId = makeId,
+                modelId = modelId,
+                valvePositionFront = null,
+                valvePositionRear = null,
+                observationStartTime = java.time.LocalDateTime.now(),
+                observationEndTime = null,
                 status = ObservationStatus.ACTIVE,
-                notes = notes,
-                photoFilename = photoFilename,
-                countdownStartTime = null,
-                countdownEndTime = null,
-                ticketId = null
+                photoPath = photoFilename,
+                userId = currentUser.id,
+                createdAt = java.time.LocalDateTime.now(),
+                updatedAt = java.time.LocalDateTime.now()
             )
             
             observationRepository.insertObservation(observation)
         } catch (e: Exception) {
-            Result.Error(e.message ?: "Failed to create observation")
+            Result.Error(Exception(e.message ?: "Failed to create observation"))
         }
     }
 }

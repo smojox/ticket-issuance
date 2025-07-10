@@ -1,0 +1,42 @@
+﻿2025-07-10T15:35:47.2048042Z ##[group]Run cd android-project
+2025-07-10T15:35:47.2048330Z [36;1mcd android-project[0m
+2025-07-10T15:35:47.2048557Z [36;1m./gradlew --version[0m
+2025-07-10T15:35:47.2104805Z shell: /usr/bin/bash -e {0}
+2025-07-10T15:35:47.2105028Z env:
+2025-07-10T15:35:47.2105299Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:35:47.2105754Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:35:47.2106109Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-10T15:35:47.2106368Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-10T15:35:47.2106806Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2025-07-10T15:35:47.2107080Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2025-07-10T15:35:47.2107329Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2025-07-10T15:35:47.2107715Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2025-07-10T15:35:47.2108151Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2025-07-10T15:35:47.2108468Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2025-07-10T15:35:47.2108700Z ##[endgroup]
+2025-07-10T15:35:47.3043062Z Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+2025-07-10T15:35:48.8847882Z ............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+2025-07-10T15:35:49.9171013Z 
+2025-07-10T15:35:49.9171582Z Welcome to Gradle 8.4!
+2025-07-10T15:35:49.9172532Z 
+2025-07-10T15:35:49.9172849Z Here are the highlights of this release:
+2025-07-10T15:35:49.9173496Z  - Compiling and testing with Java 21
+2025-07-10T15:35:49.9174032Z  - Faster Java compilation on Windows
+2025-07-10T15:35:49.9174659Z  - Role focused dependency configurations creation
+2025-07-10T15:35:49.9175015Z 
+2025-07-10T15:35:49.9175458Z For more details see https://docs.gradle.org/8.4/release-notes.html
+2025-07-10T15:35:49.9175923Z 
+2025-07-10T15:35:49.9175936Z 
+2025-07-10T15:35:49.9176247Z ------------------------------------------------------------
+2025-07-10T15:35:49.9176754Z Gradle 8.4
+2025-07-10T15:35:49.9177248Z ------------------------------------------------------------
+2025-07-10T15:35:49.9177590Z 
+2025-07-10T15:35:49.9177852Z Build time:   2023-10-04 20:52:13 UTC
+2025-07-10T15:35:49.9180951Z Revision:     e9251e572c9bd1d01e503a0dfdf43aedaeecdc3f
+2025-07-10T15:35:49.9181331Z 
+2025-07-10T15:35:49.9181512Z Kotlin:       1.9.10
+2025-07-10T15:35:49.9182047Z Groovy:       3.0.17
+2025-07-10T15:35:49.9182641Z Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
+2025-07-10T15:35:49.9183331Z JVM:          17.0.15 (Eclipse Adoptium 17.0.15+6)
+2025-07-10T15:35:49.9183897Z OS:           Linux 6.11.0-1015-azure amd64
+2025-07-10T15:35:49.9184205Z 
