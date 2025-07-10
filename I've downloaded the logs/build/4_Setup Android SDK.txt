@@ -1,0 +1,1050 @@
+﻿2025-07-10T15:03:02.3139979Z ##[group]Run android-actions/setup-android@v3
+2025-07-10T15:03:02.3140293Z with:
+2025-07-10T15:03:02.3140477Z   cmdline-tools-version: 11076708
+2025-07-10T15:03:02.3140731Z   accept-android-sdk-licenses: true
+2025-07-10T15:03:02.3140988Z   log-accepted-android-sdk-licenses: true
+2025-07-10T15:03:02.3141271Z   packages: tools platform-tools
+2025-07-10T15:03:02.3141495Z env:
+2025-07-10T15:03:02.3141756Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:03:02.3142199Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-07-10T15:03:02.3142525Z ##[endgroup]
+2025-07-10T15:03:02.4325359Z Found preinstalled sdkmanager in /usr/local/lib/android/sdk/cmdline-tools/latest with following source.properties:
+2025-07-10T15:03:02.4326930Z Pkg.Revision=12.0
+2025-07-10T15:03:02.4327313Z Pkg.Path=cmdline-tools;12.0
+2025-07-10T15:03:02.4327731Z Pkg.Desc=Android SDK Command-line Tools
+2025-07-10T15:03:02.4327960Z 
+2025-07-10T15:03:02.4328223Z Preinstalled sdkmanager has the correct version
+2025-07-10T15:03:02.4338725Z Accepting Android SDK licenses
+2025-07-10T15:03:02.4357772Z [command]/usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses
+2025-07-10T15:03:05.9947750Z Loading local repository...                                                     
+2025-07-10T15:03:05.9948703Z [=========                              ] 25% Loading local repository...       
+2025-07-10T15:03:07.1187027Z [=========                              ] 25% Fetch remote repository...        
+2025-07-10T15:03:07.6000767Z [==========                             ] 26% Fetch remote repository...        
+2025-07-10T15:03:07.6002180Z [============                           ] 31% Fetch remote repository...        
+2025-07-10T15:03:07.6453664Z [============                           ] 32% Fetch remote repository...        
+2025-07-10T15:03:07.6458705Z [=============                          ] 33% Fetch remote repository...        
+2025-07-10T15:03:07.6747218Z [=============                          ] 35% Fetch remote repository...        
+2025-07-10T15:03:07.6748298Z [==============                         ] 36% Fetch remote repository...        
+2025-07-10T15:03:07.6899432Z [==============                         ] 37% Fetch remote repository...        
+2025-07-10T15:03:07.6914891Z [===============                        ] 38% Fetch remote repository...        
+2025-07-10T15:03:07.7093937Z [===============                        ] 39% Fetch remote repository...        
+2025-07-10T15:03:07.7102866Z [================                       ] 40% Fetch remote repository...        
+2025-07-10T15:03:07.7279552Z [================                       ] 41% Fetch remote repository...        
+2025-07-10T15:03:07.7285496Z [================                       ] 42% Fetch remote repository...        
+2025-07-10T15:03:07.7604977Z [=================                      ] 44% Fetch remote repository...        
+2025-07-10T15:03:07.7609437Z [=================                      ] 45% Fetch remote repository...        
+2025-07-10T15:03:07.7778928Z [==================                     ] 46% Fetch remote repository...        
+2025-07-10T15:03:07.7786529Z [==================                     ] 47% Fetch remote repository...        
+2025-07-10T15:03:07.7874700Z [===================                    ] 48% Fetch remote repository...        
+2025-07-10T15:03:07.7878740Z [===================                    ] 49% Fetch remote repository...        
+2025-07-10T15:03:07.7981511Z [====================                   ] 50% Fetch remote repository...        
+2025-07-10T15:03:07.7983938Z [====================                   ] 51% Fetch remote repository...        
+2025-07-10T15:03:07.8074688Z [====================                   ] 53% Fetch remote repository...        
+2025-07-10T15:03:07.8077493Z [=====================                  ] 54% Fetch remote repository...        
+2025-07-10T15:03:07.8168219Z [=====================                  ] 55% Fetch remote repository...        
+2025-07-10T15:03:07.8172866Z [======================                 ] 56% Fetch remote repository...        
+2025-07-10T15:03:07.8309448Z [======================                 ] 57% Fetch remote repository...        
+2025-07-10T15:03:07.8310030Z [=======================                ] 58% Fetch remote repository...        
+2025-07-10T15:03:07.8504105Z [=======================                ] 59% Fetch remote repository...        
+2025-07-10T15:03:07.8511771Z [========================               ] 60% Fetch remote repository...        
+2025-07-10T15:03:07.9191271Z [========================               ] 61% Fetch remote repository...        
+2025-07-10T15:03:07.9193894Z [=========================              ] 63% Fetch remote repository...        
+2025-07-10T15:03:07.9376873Z [=========================              ] 64% Fetch remote repository...        
+2025-07-10T15:03:07.9386590Z [=========================              ] 65% Fetch remote repository...        
+2025-07-10T15:03:07.9598372Z [==========================             ] 66% Fetch remote repository...        
+2025-07-10T15:03:07.9600697Z [==========================             ] 67% Fetch remote repository...        
+2025-07-10T15:03:08.0055744Z [===========================            ] 68% Fetch remote repository...        
+2025-07-10T15:03:08.0058628Z [===========================            ] 69% Fetch remote repository...        
+2025-07-10T15:03:08.0135482Z [============================           ] 70% Fetch remote repository...        
+2025-07-10T15:03:08.0136784Z [============================           ] 72% Fetch remote repository...        
+2025-07-10T15:03:08.0231123Z [=============================          ] 73% Fetch remote repository...        
+2025-07-10T15:03:08.0235143Z [=============================          ] 74% Fetch remote repository...        
+2025-07-10T15:03:08.0331809Z [=============================          ] 75% Fetch remote repository...        
+2025-07-10T15:03:08.0459265Z [=============================          ] 75% Computing updates...              
+2025-07-10T15:03:08.0460974Z [=======================================] 100% Computing updates...             
+2025-07-10T15:03:08.0916107Z 5 of 6 SDK package licenses not accepted.
+2025-07-10T15:03:08.0917379Z Review licenses that have not been accepted (y/N)? 
+2025-07-10T15:03:08.0930939Z 1/5: License android-googletv-license:
+2025-07-10T15:03:08.0932217Z ---------------------------------------
+2025-07-10T15:03:08.0932811Z Terms and Conditions
+2025-07-10T15:03:08.0937193Z 
+2025-07-10T15:03:08.0938912Z This is the Google TV Add-on for the Android Software Development Kit License Agreement.
+2025-07-10T15:03:08.0942795Z 
+2025-07-10T15:03:08.0942955Z 1. Introduction
+2025-07-10T15:03:08.0943142Z 
+2025-07-10T15:03:08.0951486Z 1.1 The Google TV Add-on for the Android Software Development Kit (referred to in this License Agreement as the "Google TV Add-on" and specifically including the Android system files, packaged APIs, and Google APIs add-ons) is licensed to you subject to the terms of this License Agreement. This License Agreement forms a legally binding contract between you and Google in relation to your use of the Google TV Add-on.
+2025-07-10T15:03:08.0953769Z 
+2025-07-10T15:03:08.0954506Z 1.2 "Google" means Google Inc., a Delaware corporation with principal place of business at 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States.
+2025-07-10T15:03:08.0955378Z 
+2025-07-10T15:03:08.0955533Z 2. Accepting this License Agreement
+2025-07-10T15:03:08.0955798Z 
+2025-07-10T15:03:08.0956725Z 2.1 In order to use the Google TV Add-on, you must first agree to this License Agreement. You may not use the Google TV Add-on if you do not accept this License Agreement.
+2025-07-10T15:03:08.0957585Z 
+2025-07-10T15:03:08.0957745Z 2.2 You can accept this License Agreement by:
+2025-07-10T15:03:08.0958039Z 
+2025-07-10T15:03:08.0958498Z (A) clicking to accept or agree to this License Agreement, where this option is made available to you; or
+2025-07-10T15:03:08.0959094Z 
+2025-07-10T15:03:08.0960116Z (B) by actually using the Google TV Add-on. In this case, you agree that use of the Google TV Add-on constitutes acceptance of the License Agreement from that point onwards.
+2025-07-10T15:03:08.0961011Z 
+2025-07-10T15:03:08.0962341Z 2.3 You may not use the Google TV Add-on and may not accept the Licensing Agreement if you are a person barred from receiving the Google TV Add-on under the laws of the United States or other countries including the country in which you are resident or from which you use the Google TV Add-on.
+2025-07-10T15:03:08.0963836Z 
+2025-07-10T15:03:08.0965773Z 2.4 If you are agreeing to be bound by this License Agreement on behalf of your employer or other entity, you represent and warrant that you have full legal authority to bind your employer or such entity to this License Agreement. If you do not have the requisite authority, you may not accept the Licensing Agreement or use the Google TV Add-on on behalf of your employer or other entity.
+2025-07-10T15:03:08.0967962Z 
+2025-07-10T15:03:08.0968142Z 3. Google TV Add-on License from Google
+2025-07-10T15:03:08.0968435Z 
+2025-07-10T15:03:08.0969581Z 3.1 Subject to the terms of this License Agreement, Google grants you a limited, worldwide, royalty-free, non- assignable and non-exclusive license to use the Google TV Add-on solely to develop applications to run on the Google TV platform.
+2025-07-10T15:03:08.0970880Z 
+2025-07-10T15:03:08.0972896Z 3.2 You agree that Google or third parties own all legal right, title and interest in and to the Google TV Add-on, including any Intellectual Property Rights that subsist in the Google TV Add-on. "Intellectual Property Rights" means any and all rights under patent law, copyright law, trade secret law, trademark law, and any and all other proprietary rights. Google reserves all rights not expressly granted to you.
+2025-07-10T15:03:08.0975041Z 
+2025-07-10T15:03:08.0980443Z 3.3 Except to the extent required by applicable third party licenses, you may not copy (except for backup purposes), modify, adapt, redistribute, decompile, reverse engineer, disassemble, or create derivative works of the Google TV Add-on or any part of the Google TV Add-on. Except to the extent required by applicable third party licenses, you may not load any part of the Google TV Add-on onto a mobile handset, television, or any other hardware device except a personal computer, combine any part of the Google TV Add-on with other software, or distribute any software or device incorporating a part of the Google TV Add-on.
+2025-07-10T15:03:08.0984052Z 
+2025-07-10T15:03:08.0985192Z 3.4 Use, reproduction and distribution of components of the Google TV Add-on licensed under an open source software license are governed solely by the terms of that open source software license and not this License Agreement.
+2025-07-10T15:03:08.0986665Z 
+2025-07-10T15:03:08.0989093Z 3.5 You agree that the form and nature of the Google TV Add-on that Google provides may change without prior notice to you and that future versions of the Google TV Add-on may be incompatible with applications developed on previous versions of the Google TV Add-on. You agree that Google may stop (permanently or temporarily) providing the Google TV Add-on (or any features within the Google TV Add-on) to you or to users generally at Google's sole discretion, without prior notice to you.
+2025-07-10T15:03:08.0991630Z 
+2025-07-10T15:03:08.0993015Z 3.6 Nothing in this License Agreement gives you a right to use any of Google's or it’s licensors’ trade names, trademarks, service marks, logos, domain names, or other distinctive brand features.
+2025-07-10T15:03:08.0994056Z 
+2025-07-10T15:03:08.0994974Z 3.7 You agree that you will not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) that may be affixed to or contained within the Google TV Add-on.
+2025-07-10T15:03:08.0996253Z 
+2025-07-10T15:03:08.0996398Z 4. Use of the Google TV Add-on by You
+2025-07-10T15:03:08.0996671Z 
+2025-07-10T15:03:08.0998011Z 4.1 Google agrees that it obtains no right, title or interest from you (or your licensors) under this License Agreement in or to any software applications that you develop using the Google TV Add-on, including any intellectual property rights that subsist in those applications.
+2025-07-10T15:03:08.0999693Z 
+2025-07-10T15:03:08.1001521Z 4.2 You agree to use the Google TV Add-on and write applications only for purposes that are permitted by (a) this License Agreement and (b) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions (including any laws regarding the export of data or software to and from the United States or other relevant countries).
+2025-07-10T15:03:08.1003506Z 
+2025-07-10T15:03:08.1027215Z 4.3 You agree that if you use the Google TV Add-on to develop applications for general public users, you will protect the privacy and legal rights of those users. If the users provide you with user names, passwords, or other login information or personal information, your must make the users aware that the information will be available to your application, and you must provide legally adequate privacy notice and protection for those users. If your application stores personal or sensitive information provided by users, it must do so securely. If the user provides your application with Google Account information, your application may only use that information to access the user's Google Account when, and for the limited purposes for which, the user has given you explicit permission to do so.
+2025-07-10T15:03:08.1031551Z 
+2025-07-10T15:03:08.1033700Z 4.4 You agree that you will not engage in any activity with the Google TV Add-on, including the development or distribution of an application, that interferes with, disrupts, damages, or accesses in an unauthorized manner the servers, networks, or other properties or services of any third party including, but not limited to, Google, Multichannel Video Program Distributors or any mobile communications carrier.
+2025-07-10T15:03:08.1036141Z 
+2025-07-10T15:03:08.1037956Z 4.5 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any data, content, or resources that you create, transmit or display through the Google TV platform and/or applications for the Google TV platform, and for the consequences of your actions (including any loss or damage which Google may suffer) by doing so.
+2025-07-10T15:03:08.1040101Z 
+2025-07-10T15:03:08.1041987Z 4.6 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any breach of your obligations under this License Agreement, any applicable third party contract or Terms of Service, or any applicable law or regulation, and for the consequences (including any loss or damage which Google or any third party may suffer) of any such breach.
+2025-07-10T15:03:08.1044013Z 
+2025-07-10T15:03:08.1044150Z 5. Your Developer Credentials
+2025-07-10T15:03:08.1044389Z 
+2025-07-10T15:03:08.1045777Z 5.1 You agree that you are responsible for maintaining the confidentiality of any developer credentials that may be issued to you by Google or which you may choose yourself and that you will be solely responsible for all applications that are developed under your developer credentials.
+2025-07-10T15:03:08.1047503Z 
+2025-07-10T15:03:08.1047648Z 6. Privacy and Information
+2025-07-10T15:03:08.1047880Z 
+2025-07-10T15:03:08.1050379Z 6.1 In order to continually innovate and improve the Google TV Add-on, Google may collect certain usage statistics from the software including but not limited to a unique identifier, associated IP address, version number of the software, and information on which tools and/or services in the Google TV Add-on are being used and how they are being used. Before any of this information is collected, the Google TV Add-on will notify you and seek your consent. If you withhold consent, the information will not be collected.
+2025-07-10T15:03:08.1053119Z 
+2025-07-10T15:03:08.1053781Z 6.2 The data collected is examined in the aggregate to improve the Google TV Add-on and is maintained in accordance with Google's Privacy Policy.
+2025-07-10T15:03:08.1054824Z 
+2025-07-10T15:03:08.1055069Z 7. Third Party Applications for the Google TV Platform
+2025-07-10T15:03:08.1055446Z 
+2025-07-10T15:03:08.1058711Z 7.1 If you use the Google TV Add-on to run applications developed by a third party or that access data, content or resources provided by a third party, you agree that Google is not responsible for those applications, data, content, or resources. You understand that all data, content or resources which you may access through such third party applications are the sole responsibility of the person from which they originated and that Google is not liable for any loss or damage that you may experience as a result of the use or access of any of those third party applications, data, content, or resources.
+2025-07-10T15:03:08.1061966Z 
+2025-07-10T15:03:08.1064381Z 7.2 You should be aware the data, content, and resources presented to you through such a third party application may be protected by intellectual property rights which are owned by the providers (or by other persons or companies on their behalf). You may not modify, rent, lease, loan, sell, distribute or create derivative works based on these data, content, or resources (either in whole or in part) unless you have been specifically given permission to do so by the relevant owners.
+2025-07-10T15:03:08.1067153Z 
+2025-07-10T15:03:08.1068583Z 7.3 You acknowledge that your use of such third party applications, data, content, or resources may be subject to separate terms between you and the relevant third party. In that case, this License Agreement does not affect your legal relationship with these third parties.
+2025-07-10T15:03:08.1070044Z 
+2025-07-10T15:03:08.1070166Z 8. Using Google TV APIs
+2025-07-10T15:03:08.1070372Z 
+2025-07-10T15:03:08.1074713Z 8.1 If you use any Google TV API to retrieve data from Google, you acknowledge that the data (“Google TV API Content”) may be protected by intellectual property rights which are owned by Google or those parties that provide the data (or by other persons or companies on their behalf). Your use of any such API may be subject to additional Terms of Service. You may not modify, rent, lease, loan, sell, distribute or create derivative works based on this data (either in whole or in part) unless allowed by the relevant Terms of Service. Some portions of the Google TV API Content are licensed to Google by third parties, including but not limited to Tribune Media Services
+2025-07-10T15:03:08.1078812Z 
+2025-07-10T15:03:08.1080080Z 8.2 If you use any API to retrieve a user's data from Google, you acknowledge and agree that you shall retrieve data only with the user's explicit consent and only when, and for the limited purposes for which, the user has given you permission to do so.
+2025-07-10T15:03:08.1081505Z 
+2025-07-10T15:03:08.1081950Z 8.3 Except as explicitly permitted in Section 3 (Google TV Add-on License from Google), you must:
+2025-07-10T15:03:08.1082545Z 
+2025-07-10T15:03:08.1083412Z (a) not modify nor format the Google TV API Content except to the extent reasonably and technically necessary to optimize the display such Google TV API Content in your application;
+2025-07-10T15:03:08.1084416Z 
+2025-07-10T15:03:08.1085352Z (b) not edit the Google TV API Content in a manner that renders the Google TV API Content inaccurate of alters its inherent meaning (provided that displaying excerpts will not violate the foregoing); or
+2025-07-10T15:03:08.1086793Z 
+2025-07-10T15:03:08.1087247Z (c) not create any commercial audience measurement tool or service using the Google TV API Content
+2025-07-10T15:03:08.1087891Z 
+2025-07-10T15:03:08.1088038Z 9. Terminating this License Agreement
+2025-07-10T15:03:08.1088312Z 
+2025-07-10T15:03:08.1088793Z 9.1 This License Agreement will continue to apply until terminated by either you or Google as set out below.
+2025-07-10T15:03:08.1089417Z 
+2025-07-10T15:03:08.1090059Z 9.2 If you want to terminate this License Agreement, you may do so by ceasing your use of the Google TV Add-on and any relevant developer credentials.
+2025-07-10T15:03:08.1091151Z 
+2025-07-10T15:03:08.1091462Z 9.3 Google may at any time, terminate this License Agreement with you if:
+2025-07-10T15:03:08.1091911Z 
+2025-07-10T15:03:08.1092168Z (A) you have breached any provision of this License Agreement; or
+2025-07-10T15:03:08.1092665Z 
+2025-07-10T15:03:08.1092826Z (B) Google is required to do so by law; or
+2025-07-10T15:03:08.1093185Z 
+2025-07-10T15:03:08.1094161Z (C) the partner with whom Google offered certain parts of Google TV Add-on (such as APIs) to you has terminated its relationship with Google or ceased to offer certain parts of the Google TV Add-on to you; or
+2025-07-10T15:03:08.1095348Z 
+2025-07-10T15:03:08.1097212Z (D) Google decides to no longer providing the Google TV Add-on or certain parts of the Google TV Add-on to users in the country in which you are resident or from which you use the service, or the provision of the Google TV Add-on or certain Google TV Add-on services to you by Google is, in Google's sole discretion, no longer commercially viable.
+2025-07-10T15:03:08.1099060Z 
+2025-07-10T15:03:08.1101344Z 9.4 When this License Agreement comes to an end, all of the legal rights, obligations and liabilities that you and Google have benefited from, been subject to (or which have accrued over time whilst this License Agreement has been in force) or which are expressed to continue indefinitely, shall be unaffected by this cessation, and the provisions of paragraph 14.7 shall continue to apply to such rights, obligations and liabilities indefinitely.
+2025-07-10T15:03:08.1103707Z 
+2025-07-10T15:03:08.1103852Z 10. DISCLAIMER OF WARRANTIES
+2025-07-10T15:03:08.1104098Z 
+2025-07-10T15:03:08.1104983Z 10.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE GOOGLE TV ADD-ON IS AT YOUR SOLE RISK AND THAT THE GOOGLE TV ADD-ON IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND FROM GOOGLE.
+2025-07-10T15:03:08.1106230Z 
+2025-07-10T15:03:08.1107582Z 10.2 YOUR USE OF THE GOOGLE TV ADD-ON AND ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE GOOGLE TV ADD-ON IS AT YOUR OWN DISCRETION AND RISK AND YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH USE.
+2025-07-10T15:03:08.1109285Z 
+2025-07-10T15:03:08.1110580Z 10.3 GOOGLE FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+2025-07-10T15:03:08.1111993Z 
+2025-07-10T15:03:08.1112134Z 11. LIMITATION OF LIABILITY
+2025-07-10T15:03:08.1112391Z 
+2025-07-10T15:03:08.1114640Z 11.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT GOOGLE, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU, INCLUDING ANY LOSS OF DATA, WHETHER OR NOT GOOGLE OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.
+2025-07-10T15:03:08.1117139Z 
+2025-07-10T15:03:08.1117263Z 12. Indemnification
+2025-07-10T15:03:08.1117449Z 
+2025-07-10T15:03:08.1121192Z 12.1 To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless Google, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from (a) your use of the Google TV Add-on, (b) any application you develop on the Google TV Add-on that infringes any copyright, trademark, trade secret, trade dress, patent or other intellectual property right of any person or defames any person or violates their rights of publicity or privacy, and (c) any non-compliance by you with this License Agreement.
+2025-07-10T15:03:08.1125120Z 
+2025-07-10T15:03:08.1125285Z 13. Changes to the License Agreement
+2025-07-10T15:03:08.1125546Z 
+2025-07-10T15:03:08.1126170Z 13.1 Google may make changes to the License Agreement as it distributes new versions of the Google TV Add-on.
+2025-07-10T15:03:08.1126761Z 
+2025-07-10T15:03:08.1126872Z 14. General Legal Terms
+2025-07-10T15:03:08.1127089Z 
+2025-07-10T15:03:08.1128635Z 14.1 This License Agreement constitute the whole legal agreement between you and Google and govern your use of the Google TV Add-on (excluding any services which Google may provide to you under a separate written agreement), and completely replace any prior agreements between you and Google in relation to the Google TV Add-on.
+2025-07-10T15:03:08.1130409Z 
+2025-07-10T15:03:08.1131890Z 14.2 You agree that if Google does not exercise or enforce any legal right or remedy which is contained in this License Agreement (or which Google has the benefit of under any applicable law), this will not be taken to be a formal waiver of Google's rights and that those rights or remedies will still be available to Google.
+2025-07-10T15:03:08.1133505Z 
+2025-07-10T15:03:08.1135183Z 14.3 If any court of law, having the jurisdiction to decide on this matter, rules that any provision of this License Agreement is invalid, then that provision will be removed from this License Agreement without affecting the rest of this License Agreement. The remaining provisions of this License Agreement will continue to be valid and enforceable.
+2025-07-10T15:03:08.1137254Z 
+2025-07-10T15:03:08.1140270Z 14.4 You acknowledge and agree that Google’s API data licensors and each member of the group of companies of which Google is the parent shall be third party beneficiaries to this License Agreement and that such other companies shall be entitled to directly enforce, and rely upon, any provision of this License Agreement that confers a benefit on (or rights in favor of) them. Other than this, no other person or company shall be third party beneficiaries to this License Agreement.
+2025-07-10T15:03:08.1142806Z 
+2025-07-10T15:03:08.1144227Z 14.5 EXPORT RESTRICTIONS. THE GOOGLE TV ADD-ON IS SUBJECT TO UNITED STATES EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL DOMESTIC AND INTERNATIONAL EXPORT LAWS AND REGULATIONS THAT APPLY TO THE GOOGLE TV ADD-ON. THESE LAWS INCLUDE RESTRICTIONS ON DESTINATIONS, END USERS AND END USE.
+2025-07-10T15:03:08.1146319Z 
+2025-07-10T15:03:08.1148141Z 14.6 The rights granted in this License Agreement may not be assigned or transferred by either you or Google without the prior written approval of the other party. Neither you nor Google shall be permitted to delegate their responsibilities or obligations under this License Agreement without the prior written approval of the other party.
+2025-07-10T15:03:08.1150095Z 
+2025-07-10T15:03:08.1153041Z 14.7 This License Agreement, and your relationship with Google under this License Agreement, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Google agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from this License Agreement. Notwithstanding this, you agree that Google shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+2025-07-10T15:03:08.1156294Z 
+2025-07-10T15:03:08.1156314Z 
+2025-07-10T15:03:08.1156452Z August 15, 2011
+2025-07-10T15:03:08.1156777Z ---------------------------------------
+2025-07-10T15:03:08.1157300Z Accept? (y/N): 
+2025-07-10T15:03:08.1157633Z 2/5: License android-sdk-arm-dbt-license:
+2025-07-10T15:03:08.1158075Z ---------------------------------------
+2025-07-10T15:03:08.1158488Z Terms and Conditions
+2025-07-10T15:03:08.1158706Z 
+2025-07-10T15:03:08.1158960Z This is the Android Software Development Kit License Agreement
+2025-07-10T15:03:08.1159226Z 
+2025-07-10T15:03:08.1159317Z 1. Introduction
+2025-07-10T15:03:08.1159426Z 
+2025-07-10T15:03:08.1160907Z 1.1 The Android Software Development Kit (referred to in the License Agreement as the "SDK" and specifically including the Android system files, packaged APIs, and Google APIs add-ons) is licensed to you subject to the terms of the License Agreement. The License Agreement forms a legally binding contract between you and Google in relation to your use of the SDK.
+2025-07-10T15:03:08.1163159Z 
+2025-07-10T15:03:08.1164231Z 1.2 "Android" means the Android software stack for devices, as made available under the Android Open Source Project, which is located at the following URL: http://source.android.com/, as updated from time to time.
+2025-07-10T15:03:08.1164934Z 
+2025-07-10T15:03:08.1166181Z 1.3 A "compatible implementation" means any Android device that (i) complies with the Android Compatibility Definition document, which can be found at the Android compatibility website (http://source.android.com/compatibility) and which may be updated from time to time; and (ii) successfully passes the Android Compatibility Test Suite (CTS).
+2025-07-10T15:03:08.1167280Z 
+2025-07-10T15:03:08.1167712Z 1.4 "Google" means Google Inc., a Delaware corporation with principal place of business at 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States.
+2025-07-10T15:03:08.1168210Z 
+2025-07-10T15:03:08.1168220Z 
+2025-07-10T15:03:08.1168310Z 2. Accepting the License Agreement
+2025-07-10T15:03:08.1168475Z 
+2025-07-10T15:03:08.1168809Z 2.1 In order to use the SDK, you must first agree to the License Agreement. You may not use the SDK if you do not accept the License Agreement.
+2025-07-10T15:03:08.1169229Z 
+2025-07-10T15:03:08.1169419Z 2.2 By clicking to accept, you hereby agree to the terms of the License Agreement.
+2025-07-10T15:03:08.1169688Z 
+2025-07-10T15:03:08.1170333Z 2.3 You may not use the SDK and may not accept the License Agreement if you are a person barred from receiving the SDK under the laws of the United States or other countries, including the country in which you are resident or from which you use the SDK.
+2025-07-10T15:03:08.1171066Z 
+2025-07-10T15:03:08.1172039Z 2.4 If you are agreeing to be bound by the License Agreement on behalf of your employer or other entity, you represent and warrant that you have full legal authority to bind your employer or such entity to the License Agreement. If you do not have the requisite authority, you may not accept the License Agreement or use the SDK on behalf of your employer or other entity.
+2025-07-10T15:03:08.1173507Z 
+2025-07-10T15:03:08.1173514Z 
+2025-07-10T15:03:08.1173595Z 3. SDK License from Google
+2025-07-10T15:03:08.1173727Z 
+2025-07-10T15:03:08.1174439Z 3.1 Subject to the terms of the License Agreement, Google grants you a limited, worldwide, royalty-free, non-assignable, non-exclusive, and non-sublicensable license to use the SDK solely to develop applications for compatible implementations of Android.
+2025-07-10T15:03:08.1175230Z 
+2025-07-10T15:03:08.1176373Z 3.2 You may not use this SDK to develop applications for other platforms (including non-compatible implementations of Android) or to develop another SDK. You are of course free to develop applications for other platforms, including non-compatible implementations of Android, provided that this SDK is not used for that purpose.
+2025-07-10T15:03:08.1177400Z 
+2025-07-10T15:03:08.1178479Z 3.3 You agree that Google or third parties own all legal right, title and interest in and to the SDK, including any Intellectual Property Rights that subsist in the SDK. "Intellectual Property Rights" means any and all rights under patent law, copyright law, trade secret law, trademark law, and any and all other proprietary rights. Google reserves all rights not expressly granted to you.
+2025-07-10T15:03:08.1179628Z 
+2025-07-10T15:03:08.1180554Z 3.4 You may not use the SDK for any purpose not expressly permitted by the License Agreement. Except to the extent required by applicable third party licenses, you may not copy (except for backup purposes), modify, adapt, redistribute, decompile, reverse engineer, disassemble, or create derivative works of the SDK or any part of the SDK.
+2025-07-10T15:03:08.1181697Z 
+2025-07-10T15:03:08.1182257Z 3.5 Use, reproduction and distribution of components of the SDK licensed under an open source software license are governed solely by the terms of that open source software license and not the License Agreement.
+2025-07-10T15:03:08.1182902Z 
+2025-07-10T15:03:08.1184044Z 3.6 You agree that the form and nature of the SDK that Google provides may change without prior notice to you and that future versions of the SDK may be incompatible with applications developed on previous versions of the SDK. You agree that Google may stop (permanently or temporarily) providing the SDK (or any features within the SDK) to you or to users generally at Google's sole discretion, without prior notice to you.
+2025-07-10T15:03:08.1185256Z 
+2025-07-10T15:03:08.1185697Z 3.7 Nothing in the License Agreement gives you a right to use any of Google's trade names, trademarks, service marks, logos, domain names, or other distinctive brand features.
+2025-07-10T15:03:08.1186431Z 
+2025-07-10T15:03:08.1186925Z 3.8 You agree that you will not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) that may be affixed to or contained within the SDK.
+2025-07-10T15:03:08.1187502Z 
+2025-07-10T15:03:08.1187507Z 
+2025-07-10T15:03:08.1187608Z 4. Use of the SDK by You
+2025-07-10T15:03:08.1187734Z 
+2025-07-10T15:03:08.1188440Z 4.1 Google agrees that it obtains no right, title or interest from you (or your licensors) under the License Agreement in or to any software applications that you develop using the SDK, including any intellectual property rights that subsist in those applications.
+2025-07-10T15:03:08.1189236Z 
+2025-07-10T15:03:08.1190201Z 4.2 You agree to use the SDK and write applications only for purposes that are permitted by (a) the License Agreement and (b) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions (including any laws regarding the export of data or software to and from the United States or other relevant countries).
+2025-07-10T15:03:08.1191261Z 
+2025-07-10T15:03:08.1193450Z 4.3 You agree that if you use the SDK to develop applications for general public users, you will protect the privacy and legal rights of those users. If the users provide you with user names, passwords, or other login information or personal information, you must make the users aware that the information will be available to your application, and you must provide legally adequate privacy notice and protection for those users. If your application stores personal or sensitive information provided by users, it must do so securely. If the user provides your application with Google Account information, your application may only use that information to access the user's Google Account when, and for the limited purposes for which, the user has given you permission to do so.
+2025-07-10T15:03:08.1195842Z 
+2025-07-10T15:03:08.1197006Z 4.4 You agree that you will not engage in any activity with the SDK, including the development or distribution of an application, that interferes with, disrupts, damages, or accesses in an unauthorized manner the servers, networks, or other properties or services of any third party including, but not limited to, Google or any mobile communications carrier.
+2025-07-10T15:03:08.1198083Z 
+2025-07-10T15:03:08.1199016Z 4.5 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any data, content, or resources that you create, transmit or display through Android and/or applications for Android, and for the consequences of your actions (including any loss or damage which Google may suffer) by doing so.
+2025-07-10T15:03:08.1200028Z 
+2025-07-10T15:03:08.1201085Z 4.6 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any breach of your obligations under the License Agreement, any applicable third party contract or Terms of Service, or any applicable law or regulation, and for the consequences (including any loss or damage which Google or any third party may suffer) of any such breach.
+2025-07-10T15:03:08.1202340Z 
+2025-07-10T15:03:08.1203679Z 4.7 This software enables the execution of intellectual property owned by Arm Limited. You agree that your use of the software, that allows execution of ARM Instruction Set Architecture (“ISA”) compliant executables for application development and debug only on x86 desktop, laptop, customer on-premise servers, and customer-procured cloud-based environments.
+2025-07-10T15:03:08.1204816Z 
+2025-07-10T15:03:08.1204907Z 5. Your Developer Credentials
+2025-07-10T15:03:08.1205050Z 
+2025-07-10T15:03:08.1205816Z 5.1 You agree that you are responsible for maintaining the confidentiality of any developer credentials that may be issued to you by Google or which you may choose yourself and that you will be solely responsible for all applications that are developed under your developer credentials.
+2025-07-10T15:03:08.1206885Z 
+2025-07-10T15:03:08.1206965Z 6. Privacy and Information
+2025-07-10T15:03:08.1207093Z 
+2025-07-10T15:03:08.1208424Z 6.1 In order to continually innovate and improve the SDK, Google may collect certain usage statistics from the software including but not limited to a unique identifier, associated IP address, version number of the software, and information on which tools and/or services in the SDK are being used and how they are being used. Before any of this information is collected, the SDK will notify you and seek your consent. If you withhold consent, the information will not be collected.
+2025-07-10T15:03:08.1209828Z 
+2025-07-10T15:03:08.1210158Z 6.2 The data collected is examined in the aggregate to improve the SDK and is maintained in accordance with Google's Privacy Policy.
+2025-07-10T15:03:08.1210583Z 
+2025-07-10T15:03:08.1210587Z 
+2025-07-10T15:03:08.1210666Z 7. Third Party Applications
+2025-07-10T15:03:08.1210802Z 
+2025-07-10T15:03:08.1212425Z 7.1 If you use the SDK to run applications developed by a third party or that access data, content or resources provided by a third party, you agree that Google is not responsible for those applications, data, content, or resources. You understand that all data, content or resources which you may access through such third party applications are the sole responsibility of the person from which they originated and that Google is not liable for any loss or damage that you may experience as a result of the use or access of any of those third party applications, data, content, or resources.
+2025-07-10T15:03:08.1214236Z 
+2025-07-10T15:03:08.1215564Z 7.2 You should be aware the data, content, and resources presented to you through such a third party application may be protected by intellectual property rights which are owned by the providers (or by other persons or companies on their behalf). You may not modify, rent, lease, loan, sell, distribute or create derivative works based on these data, content, or resources (either in whole or in part) unless you have been specifically given permission to do so by the relevant owners.
+2025-07-10T15:03:08.1217325Z 
+2025-07-10T15:03:08.1218073Z 7.3 You acknowledge that your use of such third party applications, data, content, or resources may be subject to separate terms between you and the relevant third party. In that case, the License Agreement does not affect your legal relationship with these third parties.
+2025-07-10T15:03:08.1218889Z 
+2025-07-10T15:03:08.1218893Z 
+2025-07-10T15:03:08.1218962Z 8. Using Android APIs
+2025-07-10T15:03:08.1219085Z 
+2025-07-10T15:03:08.1219154Z 8.1 Google Data APIs
+2025-07-10T15:03:08.1219264Z 
+2025-07-10T15:03:08.1220602Z 8.1.1 If you use any API to retrieve data from Google, you acknowledge that the data may be protected by intellectual property rights which are owned by Google or those parties that provide the data (or by other persons or companies on their behalf). Your use of any such API may be subject to additional Terms of Service. You may not modify, rent, lease, loan, sell, distribute or create derivative works based on this data (either in whole or in part) unless allowed by the relevant Terms of Service.
+2025-07-10T15:03:08.1222144Z 
+2025-07-10T15:03:08.1224536Z 8.1.2 If you use any API to retrieve a user's data from Google, you acknowledge and agree that you shall retrieve data only with the user's explicit consent and only when, and for the limited purposes for which, the user has given you permission to do so. If you use the Android Recognition Service API, documented at the following URL: https://developer.android.com/reference/android/speech/RecognitionService, as updated from time to time, you acknowledge that the use of the API is subject to the Data Processing Addendum for Products where Google is a Data Processor, which is located at the following URL: https://privacy.google.com/businesses/gdprprocessorterms/, as updated from time to time. By clicking to accept, you hereby agree to the terms of the Data Processing Addendum for Products where Google is a Data Processor.
+2025-07-10T15:03:08.1227114Z 
+2025-07-10T15:03:08.1227125Z 
+2025-07-10T15:03:08.1227214Z 9. Terminating the License Agreement
+2025-07-10T15:03:08.1227377Z 
+2025-07-10T15:03:08.1227645Z 9.1 The License Agreement will continue to apply until terminated by either you or Google as set out below.
+2025-07-10T15:03:08.1228010Z 
+2025-07-10T15:03:08.1228326Z 9.2 If you want to terminate the License Agreement, you may do so by ceasing your use of the SDK and any relevant developer credentials.
+2025-07-10T15:03:08.1228727Z 
+2025-07-10T15:03:08.1230419Z 9.3 Google may at any time, terminate the License Agreement with you if: (A) you have breached any provision of the License Agreement; or (B) Google is required to do so by law; or (C) the partner with whom Google offered certain parts of SDK (such as APIs) to you has terminated its relationship with Google or ceased to offer certain parts of the SDK to you; or (D) Google decides to no longer provide the SDK or certain parts of the SDK to users in the country in which you are resident or from which you use the service, or the provision of the SDK or certain SDK services to you by Google is, in Google's sole discretion, no longer commercially viable.
+2025-07-10T15:03:08.1232170Z 
+2025-07-10T15:03:08.1233376Z 9.4 When the License Agreement comes to an end, all of the legal rights, obligations and liabilities that you and Google have benefited from, been subject to (or which have accrued over time whilst the License Agreement has been in force) or which are expressed to continue indefinitely, shall be unaffected by this cessation, and the provisions of paragraph 14.7 shall continue to apply to such rights, obligations and liabilities indefinitely.
+2025-07-10T15:03:08.1234777Z 
+2025-07-10T15:03:08.1234781Z 
+2025-07-10T15:03:08.1234866Z 10. DISCLAIMER OF WARRANTIES
+2025-07-10T15:03:08.1235006Z 
+2025-07-10T15:03:08.1235437Z 10.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SDK IS AT YOUR SOLE RISK AND THAT THE SDK IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND FROM GOOGLE.
+2025-07-10T15:03:08.1236066Z 
+2025-07-10T15:03:08.1236743Z 10.2 YOUR USE OF THE SDK AND ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SDK IS AT YOUR OWN DISCRETION AND RISK AND YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH USE.
+2025-07-10T15:03:08.1237523Z 
+2025-07-10T15:03:08.1238227Z 10.3 GOOGLE FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+2025-07-10T15:03:08.1239017Z 
+2025-07-10T15:03:08.1239022Z 
+2025-07-10T15:03:08.1239105Z 11. LIMITATION OF LIABILITY
+2025-07-10T15:03:08.1239233Z 
+2025-07-10T15:03:08.1240442Z 11.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT GOOGLE, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU, INCLUDING ANY LOSS OF DATA, WHETHER OR NOT GOOGLE OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.
+2025-07-10T15:03:08.1241845Z 
+2025-07-10T15:03:08.1241849Z 
+2025-07-10T15:03:08.1241917Z 12. Indemnification
+2025-07-10T15:03:08.1242026Z 
+2025-07-10T15:03:08.1244021Z 12.1 To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless Google, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from (a) your use of the SDK, (b) any application you develop on the SDK that infringes any copyright, trademark, trade secret, trade dress, patent or other intellectual property right of any person or defames any person or violates their rights of publicity or privacy, and (c) any non-compliance by you with the License Agreement.
+2025-07-10T15:03:08.1246206Z 
+2025-07-10T15:03:08.1246210Z 
+2025-07-10T15:03:08.1246294Z 13. Changes to the License Agreement
+2025-07-10T15:03:08.1246459Z 
+2025-07-10T15:03:08.1247078Z 13.1 Google may make changes to the License Agreement as it distributes new versions of the SDK. When these changes are made, Google will make a new version of the License Agreement available on the website where the SDK is made available.
+2025-07-10T15:03:08.1247787Z 
+2025-07-10T15:03:08.1247791Z 
+2025-07-10T15:03:08.1247860Z 14. General Legal Terms
+2025-07-10T15:03:08.1247980Z 
+2025-07-10T15:03:08.1248821Z 14.1 The License Agreement constitutes the whole legal agreement between you and Google and governs your use of the SDK (excluding any services which Google may provide to you under a separate written agreement), and completely replaces any prior agreements between you and Google in relation to the SDK.
+2025-07-10T15:03:08.1249740Z 
+2025-07-10T15:03:08.1250583Z 14.2 You agree that if Google does not exercise or enforce any legal right or remedy which is contained in the License Agreement (or which Google has the benefit of under any applicable law), this will not be taken to be a formal waiver of Google's rights and that those rights or remedies will still be available to Google.
+2025-07-10T15:03:08.1251617Z 
+2025-07-10T15:03:08.1252551Z 14.3 If any court of law, having the jurisdiction to decide on this matter, rules that any provision of the License Agreement is invalid, then that provision will be removed from the License Agreement without affecting the rest of the License Agreement. The remaining provisions of the License Agreement will continue to be valid and enforceable.
+2025-07-10T15:03:08.1253576Z 
+2025-07-10T15:03:08.1254786Z 14.4 You acknowledge and agree that each member of the group of companies of which Google is the parent shall be third party beneficiaries to the License Agreement and that such other companies shall be entitled to directly enforce, and rely upon, any provision of the License Agreement that confers a benefit on (or rights in favor of) them. Other than this, no other person or company shall be third party beneficiaries to the License Agreement.
+2025-07-10T15:03:08.1256202Z 
+2025-07-10T15:03:08.1256922Z 14.5 EXPORT RESTRICTIONS. THE SDK IS SUBJECT TO UNITED STATES EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL DOMESTIC AND INTERNATIONAL EXPORT LAWS AND REGULATIONS THAT APPLY TO THE SDK. THESE LAWS INCLUDE RESTRICTIONS ON DESTINATIONS, END USERS AND END USE.
+2025-07-10T15:03:08.1257739Z 
+2025-07-10T15:03:08.1258677Z 14.6 The rights granted in the License Agreement may not be assigned or transferred by either you or Google without the prior written approval of the other party. Neither you nor Google shall be permitted to delegate their responsibilities or obligations under the License Agreement without the prior written approval of the other party.
+2025-07-10T15:03:08.1259802Z 
+2025-07-10T15:03:08.1261364Z 14.7 The License Agreement, and your relationship with Google under the License Agreement, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Google agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from the License Agreement. Notwithstanding this, you agree that Google shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+2025-07-10T15:03:08.1263003Z 
+2025-07-10T15:03:08.1263013Z 
+2025-07-10T15:03:08.1263078Z January 16, 2019
+2025-07-10T15:03:08.1263255Z ---------------------------------------
+2025-07-10T15:03:08.1263490Z Accept? (y/N): 
+2025-07-10T15:03:08.1263692Z 3/5: License android-sdk-preview-license:
+2025-07-10T15:03:08.1263947Z ---------------------------------------
+2025-07-10T15:03:08.1265479Z To get started with the Android SDK Preview, you must agree to the following terms and conditions. As described below, please note that this is a preview version of the Android SDK, subject to change, that you use at your own risk. The Android SDK Preview is not a stable release, and may contain errors and defects that can result in serious damage to your computer systems, devices and data.
+2025-07-10T15:03:08.1266864Z 
+2025-07-10T15:03:08.1267055Z This is the Android SDK Preview License Agreement (the "License Agreement").
+2025-07-10T15:03:08.1267323Z 
+2025-07-10T15:03:08.1267391Z 1. Introduction
+2025-07-10T15:03:08.1267492Z 
+2025-07-10T15:03:08.1268881Z 1.1 The Android SDK Preview (referred to in the License Agreement as the “Preview” and specifically including the Android system files, packaged APIs, and Preview library files, if and when they are made available) is licensed to you subject to the terms of the License Agreement. The License Agreement forms a legally binding contract between you and Google in relation to your use of the Preview.
+2025-07-10T15:03:08.1270071Z 
+2025-07-10T15:03:08.1270647Z 1.2 "Android" means the Android software stack for devices, as made available under the Android Open Source Project, which is located at the following URL: http://source.android.com/, as updated from time to time.
+2025-07-10T15:03:08.1271456Z 
+2025-07-10T15:03:08.1271865Z 1.3 "Google" means Google Inc., a Delaware corporation with principal place of business at 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States.
+2025-07-10T15:03:08.1272360Z 
+2025-07-10T15:03:08.1272446Z 2. Accepting the License Agreement
+2025-07-10T15:03:08.1272598Z 
+2025-07-10T15:03:08.1272960Z 2.1 In order to use the Preview, you must first agree to the License Agreement. You may not use the Preview if you do not accept the License Agreement.
+2025-07-10T15:03:08.1273411Z 
+2025-07-10T15:03:08.1273664Z 2.2 By clicking to accept and/or using the Preview, you hereby agree to the terms of the License Agreement.
+2025-07-10T15:03:08.1274005Z 
+2025-07-10T15:03:08.1274700Z 2.3 You may not use the Preview and may not accept the License Agreement if you are a person barred from receiving the Preview under the laws of the United States or other countries including the country in which you are resident or from which you use the Preview.
+2025-07-10T15:03:08.1275470Z 
+2025-07-10T15:03:08.1277545Z 2.4 If you will use the Preview internally within your company or organization you agree to be bound by the License Agreement on behalf of your employer or other entity, and you represent and warrant that you have full legal authority to bind your employer or such entity to the License Agreement. If you do not have the requisite authority, you may not accept the License Agreement or use the Preview on behalf of your employer or other entity.
+2025-07-10T15:03:08.1278957Z 
+2025-07-10T15:03:08.1279074Z 3. Preview License from Google
+2025-07-10T15:03:08.1279319Z 
+2025-07-10T15:03:08.1280225Z 3.1 Subject to the terms of the License Agreement, Google grants you a royalty-free, non-assignable, non-exclusive, non-sublicensable, limited, revocable license to use the Preview, personally or internally within your company or organization, solely to develop applications to run on the Android platform.
+2025-07-10T15:03:08.1281375Z 
+2025-07-10T15:03:08.1282621Z 3.2 You agree that Google or third parties owns all legal right, title and interest in and to the Preview, including any Intellectual Property Rights that subsist in the Preview. "Intellectual Property Rights" means any and all rights under patent law, copyright law, trade secret law, trademark law, and any and all other proprietary rights. Google reserves all rights not expressly granted to you.
+2025-07-10T15:03:08.1283904Z 
+2025-07-10T15:03:08.1285582Z 3.3 You may not use the Preview for any purpose not expressly permitted by the License Agreement. Except to the extent required by applicable third party licenses, you may not: (a) copy (except for backup purposes), modify, adapt, redistribute, decompile, reverse engineer, disassemble, or create derivative works of the Preview or any part of the Preview; or (b) load any part of the Preview onto a mobile handset or any other hardware device except a personal computer, combine any part of the Preview with other software, or distribute any software or device incorporating a part of the Preview.
+2025-07-10T15:03:08.1287655Z 
+2025-07-10T15:03:08.1288370Z 3.4 You agree that you will not take any actions that may cause or result in the fragmentation of Android, including but not limited to distributing, participating in the creation of, or promoting in any way a software development kit derived from the Preview.
+2025-07-10T15:03:08.1289260Z 
+2025-07-10T15:03:08.1290476Z 3.5 Use, reproduction and distribution of components of the Preview licensed under an open source software license are governed solely by the terms of that open source software license and not the License Agreement. You agree to remain a licensee in good standing in regard to such open source software licenses under all the rights granted and to refrain from any actions that may terminate, suspend, or breach such rights.
+2025-07-10T15:03:08.1291832Z 
+2025-07-10T15:03:08.1293080Z 3.6 You agree that the form and nature of the Preview that Google provides may change without prior notice to you and that future versions of the Preview may be incompatible with applications developed on previous versions of the Preview. You agree that Google may stop (permanently or temporarily) providing the Preview (or any features within the Preview) to you or to users generally at Google's sole discretion, without prior notice to you.
+2025-07-10T15:03:08.1294553Z 
+2025-07-10T15:03:08.1295048Z 3.7 Nothing in the License Agreement gives you a right to use any of Google's trade names, trademarks, service marks, logos, domain names, or other distinctive brand features.
+2025-07-10T15:03:08.1295662Z 
+2025-07-10T15:03:08.1296389Z 3.8 You agree that you will not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) that may be affixed to or contained within the Preview.
+2025-07-10T15:03:08.1297050Z 
+2025-07-10T15:03:08.1297160Z 4. Use of the Preview by You
+2025-07-10T15:03:08.1297335Z 
+2025-07-10T15:03:08.1298215Z 4.1 Google agrees that nothing in the License Agreement gives Google any right, title or interest from you (or your licensors) under the License Agreement in or to any software applications that you develop using the Preview, including any intellectual property rights that subsist in those applications.
+2025-07-10T15:03:08.1299231Z 
+2025-07-10T15:03:08.1300329Z 4.2 You agree to use the Preview and write applications only for purposes that are permitted by (a) the License Agreement, and (b) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions (including any laws regarding the export of data or software to and from the United States or other relevant countries).
+2025-07-10T15:03:08.1301422Z 
+2025-07-10T15:03:08.1303514Z 4.3 You agree that if you use the Preview to develop applications, you will protect the privacy and legal rights of users. If users provide you with user names, passwords, or other login information or personal information, you must make the users aware that the information will be available to your application, and you must provide legally adequate privacy notice and protection for those users. If your application stores personal or sensitive information provided by users, it must do so securely. If users provide you with Google Account information, your application may only use that information to access the user's Google Account when, and for the limited purposes for which, each user has given you permission to do so.
+2025-07-10T15:03:08.1305828Z 
+2025-07-10T15:03:08.1307005Z 4.4 You agree that you will not engage in any activity with the Preview, including the development or distribution of an application, that interferes with, disrupts, damages, or accesses in an unauthorized manner the servers, networks, or other properties or services of Google or any third party.
+2025-07-10T15:03:08.1307958Z 
+2025-07-10T15:03:08.1308927Z 4.5 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any data, content, or resources that you create, transmit or display through Android and/or applications for Android, and for the consequences of your actions (including any loss or damage which Google may suffer) by doing so.
+2025-07-10T15:03:08.1310024Z 
+2025-07-10T15:03:08.1311121Z 4.6 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any breach of your obligations under the License Agreement, any applicable third party contract or Terms of Service, or any applicable law or regulation, and for the consequences (including any loss or damage which Google or any third party may suffer) of any such breach.
+2025-07-10T15:03:08.1312314Z 
+2025-07-10T15:03:08.1313751Z 4.7 The Preview is in development, and your testing and feedback are an important part of the development process. By using the Preview, you acknowledge that implementation of some features are still under development and that you should not rely on the Preview having the full functionality of a stable release. You agree not to publicly distribute or ship any application using this Preview as this Preview will no longer be supported after the official Android SDK is released.
+2025-07-10T15:03:08.1315403Z 
+2025-07-10T15:03:08.1315517Z 5. Your Developer Credentials
+2025-07-10T15:03:08.1315687Z 
+2025-07-10T15:03:08.1316718Z 5.1 You agree that you are responsible for maintaining the confidentiality of any developer credentials that may be issued to you by Google or which you may choose yourself and that you will be solely responsible for all applications that are developed under your developer credentials.
+2025-07-10T15:03:08.1317590Z 
+2025-07-10T15:03:08.1317770Z 6. Privacy and Information
+2025-07-10T15:03:08.1318028Z 
+2025-07-10T15:03:08.1320006Z 6.1 In order to continually innovate and improve the Preview, Google may collect certain usage statistics from the software including but not limited to a unique identifier, associated IP address, version number of the software, and information on which tools and/or services in the Preview are being used and how they are being used. Before any of this information is collected, the Preview will notify you and seek your consent. If you withhold consent, the information will not be collected.
+2025-07-10T15:03:08.1321662Z 
+2025-07-10T15:03:08.1322289Z 6.2 The data collected is examined in the aggregate to improve the Preview and is maintained in accordance with Google's Privacy Policy located at http://www.google.com/policies/privacy/.
+2025-07-10T15:03:08.1323010Z 
+2025-07-10T15:03:08.1323138Z 7. Third Party Applications
+2025-07-10T15:03:08.1323304Z 
+2025-07-10T15:03:08.1325005Z 7.1 If you use the Preview to run applications developed by a third party or that access data, content or resources provided by a third party, you agree that Google is not responsible for those applications, data, content, or resources. You understand that all data, content or resources which you may access through such third party applications are the sole responsibility of the person from which they originated and that Google is not liable for any loss or damage that you may experience as a result of the use or access of any of those third party applications, data, content, or resources.
+2025-07-10T15:03:08.1327133Z 
+2025-07-10T15:03:08.1328525Z 7.2 You should be aware the data, content, and resources presented to you through such a third party application may be protected by intellectual property rights which are owned by the providers (or by other persons or companies on their behalf). You may not modify, rent, lease, loan, sell, distribute or create derivative works based on these data, content, or resources (either in whole or in part) unless you have been specifically given permission to do so by the relevant owners.
+2025-07-10T15:03:08.1330026Z 
+2025-07-10T15:03:08.1330547Z 7.3 You acknowledge that your use of such third party applications, data, content, or resources may be subject to separate terms between you and the relevant third party.
+2025-07-10T15:03:08.1331107Z 
+2025-07-10T15:03:08.1331245Z 8. Using Google APIs
+2025-07-10T15:03:08.1331428Z 
+2025-07-10T15:03:08.1331515Z 8.1 Google APIs
+2025-07-10T15:03:08.1331701Z 
+2025-07-10T15:03:08.1333117Z 8.1.1 If you use any API to retrieve data from Google, you acknowledge that the data may be protected by intellectual property rights which are owned by Google or those parties that provide the data (or by other persons or companies on their behalf). Your use of any such API may be subject to additional Terms of Service. You may not modify, rent, lease, loan, sell, distribute or create derivative works based on this data (either in whole or in part) unless allowed by the relevant Terms of Service.
+2025-07-10T15:03:08.1334560Z 
+2025-07-10T15:03:08.1335271Z 8.1.2 If you use any API to retrieve a user's data from Google, you acknowledge and agree that you shall retrieve data only with the user's explicit consent and only when, and for the limited purposes for which, the user has given you permission to do so.
+2025-07-10T15:03:08.1336331Z 
+2025-07-10T15:03:08.1336445Z 9. Terminating the License Agreement
+2025-07-10T15:03:08.1336919Z 
+2025-07-10T15:03:08.1337222Z 9.1 the License Agreement will continue to apply until terminated by either you or Google as set out below.
+2025-07-10T15:03:08.1337652Z 
+2025-07-10T15:03:08.1338049Z 9.2 If you want to terminate the License Agreement, you may do so by ceasing your use of the Preview and any relevant developer credentials.
+2025-07-10T15:03:08.1338493Z 
+2025-07-10T15:03:08.1338750Z 9.3 Google may at any time, terminate the License Agreement, with or without cause, upon notice to you.
+2025-07-10T15:03:08.1339211Z 
+2025-07-10T15:03:08.1340123Z 9.4 The License Agreement will automatically terminate without notice or other action upon the earlier of: (A) when Google ceases to provide the Preview or certain parts of the Preview to users in the country in which you are resident or from which you use the service; and (B) Google issues a final release version of the Android SDK.
+2025-07-10T15:03:08.1341153Z 
+2025-07-10T15:03:08.1341828Z 9.5 When the License Agreement is terminated, the license granted to you in the License Agreement will terminate, you will immediately cease all use of the Preview, and the provisions of paragraphs 10, 11, 12 and 14 shall survive indefinitely.
+2025-07-10T15:03:08.1342582Z 
+2025-07-10T15:03:08.1342753Z 10. DISCLAIMERS
+2025-07-10T15:03:08.1342906Z 
+2025-07-10T15:03:08.1343434Z 10.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE PREVIEW IS AT YOUR SOLE RISK AND THAT THE PREVIEW IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND FROM GOOGLE.
+2025-07-10T15:03:08.1344042Z 
+2025-07-10T15:03:08.1345608Z 10.2 YOUR USE OF THE PREVIEW AND ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE PREVIEW IS AT YOUR OWN DISCRETION AND RISK AND YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH USE. WITHOUT LIMITING THE FOREGOING, YOU UNDERSTAND THAT THE PREVIEW IS NOT A STABLE RELEASE AND MAY CONTAIN ERRORS, DEFECTS AND SECURITY VULNERABILITIES THAT CAN RESULT IN SIGNIFICANT DAMAGE, INCLUDING THE COMPLETE, IRRECOVERABLE LOSS OF USE OF YOUR COMPUTER SYSTEM OR OTHER DEVICE.
+2025-07-10T15:03:08.1347605Z 
+2025-07-10T15:03:08.1348409Z 10.3 GOOGLE FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+2025-07-10T15:03:08.1349252Z 
+2025-07-10T15:03:08.1349395Z 11. LIMITATION OF LIABILITY
+2025-07-10T15:03:08.1349558Z 
+2025-07-10T15:03:08.1350795Z 11.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT GOOGLE, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU, INCLUDING ANY LOSS OF DATA, WHETHER OR NOT GOOGLE OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.
+2025-07-10T15:03:08.1352133Z 
+2025-07-10T15:03:08.1352283Z 12. Indemnification
+2025-07-10T15:03:08.1352476Z 
+2025-07-10T15:03:08.1354840Z 12.1 To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless Google, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys’ fees) arising out of or accruing from (a) your use of the Preview, (b) any application you develop on the Preview that infringes any Intellectual Property Rights of any person or defames any person or violates their rights of publicity or privacy, and (c) any non-compliance by you of the License Agreement.
+2025-07-10T15:03:08.1357030Z 
+2025-07-10T15:03:08.1357147Z 13. Changes to the License Agreement
+2025-07-10T15:03:08.1357318Z 
+2025-07-10T15:03:08.1358055Z 13.1 Google may make changes to the License Agreement as it distributes new versions of the Preview. When these changes are made, Google will make a new version of the License Agreement available on the website where the Preview is made available.
+2025-07-10T15:03:08.1359034Z 
+2025-07-10T15:03:08.1359138Z 14. General Legal Terms
+2025-07-10T15:03:08.1359286Z 
+2025-07-10T15:03:08.1360219Z 14.1 the License Agreement constitutes the whole legal agreement between you and Google and governs your use of the Preview (excluding any services which Google may provide to you under a separate written agreement), and completely replaces any prior agreements between you and Google in relation to the Preview.
+2025-07-10T15:03:08.1361186Z 
+2025-07-10T15:03:08.1362195Z 14.2 You agree that if Google does not exercise or enforce any legal right or remedy which is contained in the License Agreement (or which Google has the benefit of under any applicable law), this will not be taken to be a formal waiver of Google's rights and that those rights or remedies will still be available to Google.
+2025-07-10T15:03:08.1363152Z 
+2025-07-10T15:03:08.1364120Z 14.3 If any court of law, having the jurisdiction to decide on this matter, rules that any provision of the License Agreement is invalid, then that provision will be removed from the License Agreement without affecting the rest of the License Agreement. The remaining provisions of the License Agreement will continue to be valid and enforceable.
+2025-07-10T15:03:08.1365200Z 
+2025-07-10T15:03:08.1366687Z 14.4 You acknowledge and agree that each member of the group of companies of which Google is the parent shall be third party beneficiaries to the License Agreement and that such other companies shall be entitled to directly enforce, and rely upon, any provision of the License Agreement that confers a benefit on (or rights in favor of) them. Other than this, no other person or company shall be third party beneficiaries to the License Agreement.
+2025-07-10T15:03:08.1368240Z 
+2025-07-10T15:03:08.1369046Z 14.5 EXPORT RESTRICTIONS. THE PREVIEW IS SUBJECT TO UNITED STATES EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL DOMESTIC AND INTERNATIONAL EXPORT LAWS AND REGULATIONS THAT APPLY TO THE PREVIEW. THESE LAWS INCLUDE RESTRICTIONS ON DESTINATIONS, END USERS AND END USE.
+2025-07-10T15:03:08.1369962Z 
+2025-07-10T15:03:08.1370862Z 14.6 The License Agreement may not be assigned or transferred by you without the prior written approval of Google, and any attempted assignment without such approval will be void. You shall not delegate your responsibilities or obligations under the License Agreement without the prior written approval of Google.
+2025-07-10T15:03:08.1371851Z 
+2025-07-10T15:03:08.1373523Z 14.7 The License Agreement, and your relationship with Google under the License Agreement, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Google agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from the License Agreement. Notwithstanding this, you agree that Google shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+2025-07-10T15:03:08.1375254Z 
+2025-07-10T15:03:08.1375400Z June 2014.
+2025-07-10T15:03:08.1375630Z ---------------------------------------
+2025-07-10T15:03:08.1376147Z Accept? (y/N): 
+2025-07-10T15:03:08.1376477Z 4/5: License google-gdk-license:
+2025-07-10T15:03:08.1376793Z ---------------------------------------
+2025-07-10T15:03:08.1377203Z This is a Developer Preview of the GDK that is subject to change.
+2025-07-10T15:03:08.1377520Z 
+2025-07-10T15:03:08.1377633Z Terms and Conditions
+2025-07-10T15:03:08.1377777Z 
+2025-07-10T15:03:08.1377953Z This is the Glass Development Kit License Agreement.
+2025-07-10T15:03:08.1378192Z 
+2025-07-10T15:03:08.1378286Z 1. Introduction
+2025-07-10T15:03:08.1378489Z 
+2025-07-10T15:03:08.1379597Z 1.1 The Glass Development Kit (referred to in this License Agreement as the "GDK" and specifically including the Android system files, packaged APIs, and GDK library files, if and when they are made available) is licensed to you subject to the terms of this License Agreement. This License Agreement forms a legally binding contract between you and Google in relation to your use of the GDK.
+2025-07-10T15:03:08.1380961Z 
+2025-07-10T15:03:08.1381366Z 1.2 "Glass" means Glass devices and the Glass software stack for use on Glass devices.
+2025-07-10T15:03:08.1381685Z 
+2025-07-10T15:03:08.1381689Z 
+2025-07-10T15:03:08.1382308Z 1.3 "Android" means the Android software stack for devices, as made available under the Android Open Source Project, which is located at the following URL: http://source.android.com/, as updated from time to time.
+2025-07-10T15:03:08.1383040Z 
+2025-07-10T15:03:08.1383504Z 1.4 "Google" means Google Inc., a Delaware corporation with principal place of business at 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States.
+2025-07-10T15:03:08.1384064Z 
+2025-07-10T15:03:08.1384180Z 2. Accepting this License Agreement
+2025-07-10T15:03:08.1384373Z 
+2025-07-10T15:03:08.1384761Z 2.1 In order to use the GDK, you must first agree to this License Agreement. You may not use the GDK if you do not accept this License Agreement.
+2025-07-10T15:03:08.1385256Z 
+2025-07-10T15:03:08.1385489Z 2.2 By clicking to accept, you hereby agree to the terms of this License Agreement.
+2025-07-10T15:03:08.1385867Z 
+2025-07-10T15:03:08.1386744Z 2.3 You may not use the GDK and may not accept the License Agreement if you are a person barred from receiving the GDK under the laws of the United States or other countries including the country in which you are resident or from which you use the GDK.
+2025-07-10T15:03:08.1387503Z 
+2025-07-10T15:03:08.1388567Z 2.4 If you are agreeing to be bound by this License Agreement on behalf of your employer or other entity, you represent and warrant that you have full legal authority to bind your employer or such entity to this License Agreement. If you do not have the requisite authority, you may not accept the License Agreement or use the GDK on behalf of your employer or other entity.
+2025-07-10T15:03:08.1389845Z 
+2025-07-10T15:03:08.1390005Z 3. GDK License from Google
+2025-07-10T15:03:08.1390165Z 
+2025-07-10T15:03:08.1390856Z 3.1 Subject to the terms of this License Agreement, Google grants you a limited, worldwide, royalty-free, non-assignable and non-exclusive license to use the GDK solely to develop applications to run on the Glass platform for Glass devices.
+2025-07-10T15:03:08.1391655Z 
+2025-07-10T15:03:08.1392740Z 3.2 You agree that Google or third parties own all legal right, title and interest in and to the GDK, including any Intellectual Property Rights that subsist in the GDK. "Intellectual Property Rights" means any and all rights under patent law, copyright law, trade secret law, trademark law, and any and all other proprietary rights. Google reserves all rights not expressly granted to you.
+2025-07-10T15:03:08.1393968Z 
+2025-07-10T15:03:08.1395800Z 3.3 You may not use the GDK for any purpose not expressly permitted by this License Agreement. Except to the extent required by applicable third party licenses, you may not: (a) copy (except for backup purposes), modify, adapt, redistribute, decompile, reverse engineer, disassemble, or create derivative works of the GDK or any part of the GDK; or (b) load any part of the GDK onto a mobile handset or wearable computing device or any other hardware device except a Glass device personal computer, combine any part of the GDK with other software, or distribute any software or device incorporating a part of the GDK.
+2025-07-10T15:03:08.1397833Z 
+2025-07-10T15:03:08.1398541Z 3.4 You agree that you will not take any actions that may cause or result in the fragmentation of Glass, including but not limited to distributing, participating in the creation of, or promoting in any way a software development kit derived from the GDK.
+2025-07-10T15:03:08.1399329Z 
+2025-07-10T15:03:08.1400010Z 3.5 Use, reproduction and distribution of components of the GDK licensed under an open source software license are governed solely by the terms of that open source software license and not this License Agreement.
+2025-07-10T15:03:08.1400837Z 
+2025-07-10T15:03:08.1402564Z 3.6 You agree that the form and nature of the GDK that Google provides may change without prior notice to you and that future versions of the GDK may be incompatible with applications developed on previous versions of the GDK. You agree that Google may stop (permanently or temporarily) providing the GDK (or any features within the GDK) to you or to users generally at Google's sole discretion, without prior notice to you.
+2025-07-10T15:03:08.1404803Z 
+2025-07-10T15:03:08.1405695Z 3.7 Nothing in this License Agreement gives you a right to use any of Google's trade names, trademarks, service marks, logos, domain names, or other distinctive brand features.
+2025-07-10T15:03:08.1406983Z 
+2025-07-10T15:03:08.1408060Z 3.8 You agree that you will not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) that may be affixed to or contained within the GDK.
+2025-07-10T15:03:08.1409311Z 
+2025-07-10T15:03:08.1409325Z 
+2025-07-10T15:03:08.1411297Z 3.9 Your use of any Android system files, packaged APIs, or other components of the GDK which are part of the Android Software Development Kit is subject to the terms of the Android Software Development Kit License Agreement located at http://developer.android.com/sdk/terms.html. These terms are hereby incorporated by reference into this License Agreement.
+2025-07-10T15:03:08.1413368Z 
+2025-07-10T15:03:08.1413574Z 4. Use of the GDK by You
+2025-07-10T15:03:08.1413914Z 
+2025-07-10T15:03:08.1415414Z 4.1 Google agrees that it obtains no right, title or interest from you (or your licensors) under this License Agreement in or to any software applications that you develop using the GDK, including any intellectual property rights that subsist in those applications.
+2025-07-10T15:03:08.1417910Z 
+2025-07-10T15:03:08.1420769Z 4.2 You agree to use the GDK and write applications only for purposes that are permitted by (a) this License Agreement, (b) the Glass Platform Developer Policies (located at https://developers.google.com/glass/policies, and hereby incorporated into this License Agreement by reference), and (c) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions (including any laws regarding the export of data or software to and from the United States or other relevant countries).
+2025-07-10T15:03:08.1423727Z 
+2025-07-10T15:03:08.1426876Z 4.3 You agree that if you use the GDK to develop applications for general public users, you will protect the privacy and legal rights of those users. If the users provide you with user names, passwords, or other login information or personal information, you must make the users aware that the information will be available to your application, and you must provide legally adequate privacy notice and protection for those users. If your application stores personal or sensitive information provided by users, it must do so securely. If the user provides your application with Google Account information, your application may only use that information to access the user's Google Account when, and for the limited purposes for which, the user has given you permission to do so.
+2025-07-10T15:03:08.1429382Z 
+2025-07-10T15:03:08.1430308Z 4.4 You agree that you will not engage in any activity with the GDK, including the development or distribution of an application, that interferes with, disrupts, damages, or accesses in an unauthorized manner the servers, networks, or other properties or services of any third party including, but not limited to, Google.
+2025-07-10T15:03:08.1431319Z 
+2025-07-10T15:03:08.1432274Z 4.5 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any data, content, or resources that you create, transmit or display through Glass and/or applications for Glass, and for the consequences of your actions (including any loss or damage which Google may suffer) by doing so.
+2025-07-10T15:03:08.1433481Z 
+2025-07-10T15:03:08.1434604Z 4.6 You agree that you are solely responsible for (and that Google has no responsibility to you or to any third party for) any breach of your obligations under this License Agreement, any applicable third party contract or Terms of Service, or any applicable law or regulation, and for the consequences (including any loss or damage which Google or any third party may suffer) of any such breach.
+2025-07-10T15:03:08.1435835Z 
+2025-07-10T15:03:08.1435840Z 
+2025-07-10T15:03:08.1437415Z 4.7 The GDK is in development, and your testing and feedback are an important part of the development process. By using the GDK, you acknowledge that implementation of some features are still under development and that you should not rely on the GDK, Glass devices, Glass system software, Google Mirror API, or Glass services having the full functionality of a stable release.
+2025-07-10T15:03:08.1438568Z 
+2025-07-10T15:03:08.1438689Z 5. Your Developer Credentials
+2025-07-10T15:03:08.1438945Z 
+2025-07-10T15:03:08.1439734Z 5.1 You agree that you are responsible for maintaining the confidentiality of any developer credentials that may be issued to you by Google or which you may choose yourself and that you will be solely responsible for all applications that are developed under your developer credentials.
+2025-07-10T15:03:08.1440733Z 
+2025-07-10T15:03:08.1440853Z 6. Privacy and Information
+2025-07-10T15:03:08.1441022Z 
+2025-07-10T15:03:08.1441026Z 
+2025-07-10T15:03:08.1442369Z 6.1 In order to continually innovate and improve the GDK, Google may collect certain usage statistics from the software including but not limited to a unique identifier, associated IP address, version number of the software, and information on which tools and/or services in the GDK are being used and how they are being used. Before any of this information is collected, the GDK will notify you and seek your consent. If you withhold consent, the information will not be collected.
+2025-07-10T15:03:08.1443965Z 
+2025-07-10T15:03:08.1444317Z 6.2 The data collected is examined in the aggregate to improve the GDK and is maintained in accordance with Google's Privacy Policy.
+2025-07-10T15:03:08.1444870Z 
+2025-07-10T15:03:08.1444985Z 7. Third Party Applications
+2025-07-10T15:03:08.1445153Z 
+2025-07-10T15:03:08.1447135Z 7.1 If you use the GDK to run applications developed by a third party or that access data, content or resources provided by a third party, you agree that Google is not responsible for those applications, data, content, or resources. You understand that all data, content or resources which you may access through such third party applications are the sole responsibility of the person from which they originated and that Google is not liable for any loss or damage that you may experience as a result of the use or access of any of those third party applications, data, content, or resources.
+2025-07-10T15:03:08.1448864Z 
+2025-07-10T15:03:08.1450283Z 7.2 You should be aware the data, content, and resources presented to you through such a third party application may be protected by intellectual property rights which are owned by the providers (or by other persons or companies on their behalf). You may not modify, rent, lease, loan, sell, distribute or create derivative works based on these data, content, or resources (either in whole or in part) unless you have been specifically given permission to do so by the relevant owners.
+2025-07-10T15:03:08.1451712Z 
+2025-07-10T15:03:08.1452507Z 7.3 You acknowledge that your use of such third party applications, data, content, or resources may be subject to separate terms between you and the relevant third party. In that case, this License Agreement does not affect your legal relationship with these third parties.
+2025-07-10T15:03:08.1453343Z 
+2025-07-10T15:03:08.1453444Z 8. Using Google APIs
+2025-07-10T15:03:08.1453615Z 
+2025-07-10T15:03:08.1453762Z 8.1 Google APIs
+2025-07-10T15:03:08.1453913Z 
+2025-07-10T15:03:08.1455341Z 8.1.1 If you use any API to retrieve data from Google, you acknowledge that the data may be protected by intellectual property rights which are owned by Google or those parties that provide the data (or by other persons or companies on their behalf). Your use of any such API may be subject to additional Terms of Service. You may not modify, rent, lease, loan, sell, distribute or create derivative works based on this data (either in whole or in part) unless allowed by the relevant Terms of Service.
+2025-07-10T15:03:08.1457264Z 
+2025-07-10T15:03:08.1457985Z 8.1.2 If you use any API to retrieve a user's data from Google, you acknowledge and agree that you shall retrieve data only with the user's explicit consent and only when, and for the limited purposes for which, the user has given you permission to do so.
+2025-07-10T15:03:08.1458729Z 
+2025-07-10T15:03:08.1458915Z 9. Terminating this License Agreement
+2025-07-10T15:03:08.1459165Z 
+2025-07-10T15:03:08.1459468Z 9.1 This License Agreement will continue to apply until terminated by either you or Google as set out below.
+2025-07-10T15:03:08.1459859Z 
+2025-07-10T15:03:08.1460256Z 9.2 If you want to terminate this License Agreement, you may do so by ceasing your use of the GDK and any relevant developer credentials.
+2025-07-10T15:03:08.1460782Z 
+2025-07-10T15:03:08.1486611Z 9.3 Google may at any time, terminate this License Agreement with you if: (A) you have breached any provision of this License Agreement; or (B) Google is required to do so by law; or (C) the partner with whom Google offered certain parts of GDK (such as APIs) to you has terminated its relationship with Google or ceased to offer certain parts of the GDK to you; or (D) Google decides to no longer provide the GDK or certain parts of the GDK to users in the country in which you are resident or from which you use the service, or the provision of the GDK or certain GDK services to you by Google is, in Google's sole discretion, no longer commercially viable.
+2025-07-10T15:03:08.1489900Z 
+2025-07-10T15:03:08.1491926Z 9.4 When this License Agreement comes to an end, all of the legal rights, obligations and liabilities that you and Google have benefited from, been subject to (or which have accrued over time whilst this License Agreement has been in force) or which are expressed to continue indefinitely, shall be unaffected by this cessation, and the provisions of paragraph 14.7 shall continue to apply to such rights, obligations and liabilities indefinitely.
+2025-07-10T15:03:08.1494285Z 
+2025-07-10T15:03:08.1494456Z 10. DISCLAIMER OF WARRANTIES
+2025-07-10T15:03:08.1494710Z 
+2025-07-10T15:03:08.1495494Z 10.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE GDK IS AT YOUR SOLE RISK AND THAT THE GDK IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND FROM GOOGLE.
+2025-07-10T15:03:08.1496644Z 
+2025-07-10T15:03:08.1497945Z 10.2 YOUR USE OF THE GDK AND ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE GDK IS AT YOUR OWN DISCRETION AND RISK AND YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH USE.
+2025-07-10T15:03:08.1499378Z 
+2025-07-10T15:03:08.1500674Z 10.3 GOOGLE FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+2025-07-10T15:03:08.1502175Z 
+2025-07-10T15:03:08.1502337Z 11. LIMITATION OF LIABILITY
+2025-07-10T15:03:08.1502601Z 
+2025-07-10T15:03:08.1504822Z 11.1 YOU EXPRESSLY UNDERSTAND AND AGREE THAT GOOGLE, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU, INCLUDING ANY LOSS OF DATA, WHETHER OR NOT GOOGLE OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.
+2025-07-10T15:03:08.1507365Z 
+2025-07-10T15:03:08.1507747Z 12. Indemnification
+2025-07-10T15:03:08.1507951Z 
+2025-07-10T15:03:08.1510000Z 12.1 To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless Google, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from (a) your use of the GDK, (b) any application you develop on the GDK that infringes any copyright, trademark, trade secret, trade dress, patent or other intellectual property right of any person or defames any person or violates their rights of publicity or privacy, and (c) any non-compliance by you with this License Agreement.
+2025-07-10T15:03:08.1512044Z 
+2025-07-10T15:03:08.1512136Z 13. Changes to the License Agreement
+2025-07-10T15:03:08.1512300Z 
+2025-07-10T15:03:08.1512918Z 13.1 Google may make changes to the License Agreement as it distributes new versions of the GDK. When these changes are made, Google will make a new version of the License Agreement available on the website where the GDK is made available.
+2025-07-10T15:03:08.1513623Z 
+2025-07-10T15:03:08.1513696Z 14. General Legal Terms
+2025-07-10T15:03:08.1513817Z 
+2025-07-10T15:03:08.1514654Z 14.1 This License Agreement constitutes the whole legal agreement between you and Google and governs your use of the GDK (excluding any services which Google may provide to you under a separate written agreement), and completely replaces any prior agreements between you and Google in relation to the GDK.
+2025-07-10T15:03:08.1515561Z 
+2025-07-10T15:03:08.1516660Z 14.2 You agree that if Google does not exercise or enforce any legal right or remedy which is contained in this License Agreement (or which Google has the benefit of under any applicable law), this will not be taken to be a formal waiver of Google's rights and that those rights or remedies will still be available to Google.
+2025-07-10T15:03:08.1517774Z 
+2025-07-10T15:03:08.1518726Z 14.3 If any court of law, having the jurisdiction to decide on this matter, rules that any provision of this License Agreement is invalid, then that provision will be removed from this License Agreement without affecting the rest of this License Agreement. The remaining provisions of this License Agreement will continue to be valid and enforceable.
+2025-07-10T15:03:08.1519754Z 
+2025-07-10T15:03:08.1520976Z 14.4 You acknowledge and agree that each member of the group of companies of which Google is the parent shall be third party beneficiaries to this License Agreement and that such other companies shall be entitled to directly enforce, and rely upon, any provision of this License Agreement that confers a benefit on (or rights in favor of) them. Other than this, no other person or company shall be third party beneficiaries to this License Agreement.
+2025-07-10T15:03:08.1522280Z 
+2025-07-10T15:03:08.1523000Z 14.5 EXPORT RESTRICTIONS. THE GDK IS SUBJECT TO UNITED STATES EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL DOMESTIC AND INTERNATIONAL EXPORT LAWS AND REGULATIONS THAT APPLY TO THE GDK. THESE LAWS INCLUDE RESTRICTIONS ON DESTINATIONS, END USERS AND END USE.
+2025-07-10T15:03:08.1523806Z 
+2025-07-10T15:03:08.1524759Z 14.6 The rights granted in this License Agreement may not be assigned or transferred by either you or Google without the prior written approval of the other party. Neither you nor Google shall be permitted to delegate their responsibilities or obligations under this License Agreement without the prior written approval of the other party.
+2025-07-10T15:03:08.1525786Z 
+2025-07-10T15:03:08.1527554Z 14.7 This License Agreement, and your relationship with Google under this License Agreement, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Google agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from this License Agreement. Notwithstanding this, you agree that Google shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+2025-07-10T15:03:08.1529327Z 
+2025-07-10T15:03:08.1529397Z November 19, 2013
+2025-07-10T15:03:08.1529587Z ---------------------------------------
+2025-07-10T15:03:08.1529821Z Accept? (y/N): 
+2025-07-10T15:03:08.1530031Z 5/5: License mips-android-sysimage-license:
+2025-07-10T15:03:08.1530295Z ---------------------------------------
+2025-07-10T15:03:08.1532227Z MIPS Technologies, Inc. (“MIPS”) Internal Evaluation License Agreement for MIPS Android™ System Images for Android Software Development Kit (SDK): This Internal Evaluation License Agreement (this "Agreement") is entered into by and between MIPS and you (as an individual developer or a legal entity -- identified below as “Recipient”). MIPS shall make the Evaluation Software available to Recipient as described in accordance with the terms and conditions set forth below.
+2025-07-10T15:03:08.1533663Z 
+2025-07-10T15:03:08.1535346Z By clicking on the “Accept” button, downloading, installing, or otherwise using the Evaluation Materials (defined below), you agree to be bound by the terms of this Agreement effective as of the date you click “Accept” (the “Effective Date”), and if doing so on behalf of an entity, you represent that you are authorized to bind the entity to the terms and conditions of this Agreement. If you do not agree to be bound by the terms and conditions of this Agreement, do not download, install, or use the Evaluation Materials.
+2025-07-10T15:03:08.1537035Z 
+2025-07-10T15:03:08.1537192Z 1. DEFINITIONS. These terms shall have the following meanings:
+2025-07-10T15:03:08.1537556Z 
+2025-07-10T15:03:08.1538094Z 1.1 “MIPS” shall mean MIPS Technologies, Inc., a Delaware corporation having a principal place of business at: 955 East Arques Ave., Sunnyvale, CA 94085
+2025-07-10T15:03:08.1538573Z 
+2025-07-10T15:03:08.1539077Z 1.2 “Evaluation Software” shall mean MIPS Android™ emulator system images for Android Software Development Kit (SDK), as made available to Recipient.
+2025-07-10T15:03:08.1539581Z 
+2025-07-10T15:03:08.1540637Z 1.3 “Evaluation Materials" means, collectively, the Evaluation Software (in source and/or object code form) and documentation (including, without limitation, any design documents, specifications, reference manuals, and other related materials) related to the Evaluation Software as made available to Recipient.
+2025-07-10T15:03:08.1541610Z 
+2025-07-10T15:03:08.1544929Z 1.4 “Open Source Software” means any software that requires (as a condition of use, modification and/or distribution of such software) that such software or other software incorporated into, derived from or distributed with such software (a) be disclosed or distributed in source code form; or (b) be licensed by the user to third parties for the purpose of making and/or distributing derivative works; or (c) be redistributable at no charge. Open Source Software includes, without limitation, software licensed or distributed under any of the following licenses or distribution models, or licenses or distribution models substantially similar to any of the following: (a) GNU’s General Public License (GPL) or Lesser/Library GPL (LGPL), (b) the Artistic License (e.g., PERL), (c) the Mozilla Public License, (d) the Netscape Public License, (e) the Sun Community Source License (SCSL), (f) the Sun Industry Source License (SISL), (g) the Apache Software license and (h) the Common Public License (CPL).
+2025-07-10T15:03:08.1547987Z 
+2025-07-10T15:03:08.1548985Z 1.5 “Pre-Release Materials” means “alpha” or “beta” designated pre-release features, which may not be fully functional, which MIPS may substantially modify in producing any production version of the Evaluation Materials, and/or which is still under development by MIPS and/or MIPS’ suppliers.
+2025-07-10T15:03:08.1549901Z 
+2025-07-10T15:03:08.1551547Z 2. PURPOSE. MIPS desires to make the Evaluation Materials available to Recipient solely for Recipient's internal evaluation of the Evaluation Software to evaluate the desirability of cooperating with MIPS in developing products that are compatible with the Evaluation Software and/or to advise MIPS as to possible modifications to the Evaluation Software. Recipient may not disclose, distribute, modify (except to facilitate the above-mentioned internal evaluation), or make commercial use of the Evaluation Materials or any modifications of the Evaluation Materials.
+2025-07-10T15:03:08.1553395Z 
+2025-07-10T15:03:08.1554645Z THE EVALUATION MATERIALS ARE PROVIDED FOR EVALUATION PURPOSES ONLY AND MAY NOT BE MODIFIED (EXCEPT TO FACILITATE THE INTERNAL EVALUATION) OR DISTRIBUTED BY RECIPIENT OR INCORPORATED INTO RECIPIENT’S PRODUCTS OR SOFTWARE. PLEASE CONTACT A MIPS SALES REPRESENTATIVE TO LEARN ABOUT THE AVAILABILITY AND COST OF A COMMERCIAL VERSION OF THE EVALUATION SOFTWARE.
+2025-07-10T15:03:08.1555755Z 
+2025-07-10T15:03:08.1556761Z 3. TITLE. Title to the Evaluation Materials remains with MIPS or its suppliers. Recipient shall not mortgage, pledge or encumber the Evaluation Materials in any way. Recipient shall return all Evaluation Materials, keeping no copies, upon termination or expiration of this Agreement.
+2025-07-10T15:03:08.1557632Z 
+2025-07-10T15:03:08.1560915Z 4. LICENSE. MIPS grants Recipient a royalty-free, personal, nontransferable, nonexclusive license under its copyrights to use the Evaluation Software only for the purposes described in paragraph 2 above and only for a period beginning on the Effective Date and extending to the first anniversary of the Effective Date (the “Evaluation Period”). Unless otherwise communicated in writing by MIPS to Recipient, to the extent the Evaluation Software is provided in more than one delivery or release (each, a “Release”) the license grant in this Section 4 and the Evaluation Period shall apply to each Release, in which case the Evaluation Period shall begin on the date that the Release is made generally available and continue to the first anniversary of such date. Recipient may not make modifications to the Evaluation Software. Recipient shall not disassemble, reverse-engineer, or decompile any software that is not provided to Recipient in source code form.
+2025-07-10T15:03:08.1563859Z 
+2025-07-10T15:03:08.1563864Z 
+2025-07-10T15:03:08.1564780Z EXCEPT AS PROVIDED HEREIN, NO OTHER LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE, TO ANY OTHER MIPS INTELLECTUAL PROPERTY RIGHTS IS GRANTED TO THE RECIPIENT. OTHER THAN AS EXPLICITLY SET FORTH IN PARAGRAPH 2 ABOVE, NO RIGHT TO COPY, TO REPRODUCE, TO MODIFY, OR TO CREATE DERIVATIVE WORKS OF, THE EVALUATION MATERIALS IS GRANTED HEREIN.
+2025-07-10T15:03:08.1565783Z 
+2025-07-10T15:03:08.1566737Z 5. NO OBLIGATION. Recipient shall have no duty to purchase or license any product from MIPS. MIPS and its suppliers shall have no obligation to provide support for, or develop a non-evaluation version of, the Evaluation Software or to license any version of it.
+2025-07-10T15:03:08.1567523Z 
+2025-07-10T15:03:08.1570862Z 6. MODIFICATIONS. This Agreement does not obligate Recipient to provide MIPS with comments or suggestions regarding Evaluation Materials. However, should Recipient provide MIPS with comments or suggestions for the modification, correction, improvement or enhancement of (a) the Evaluation Materials or (b) MIPS products or processes which may embody the Evaluation Materials, then Recipient agrees to grant and hereby grants to MIPS a non-exclusive, irrevocable, worldwide, fully paid-up, royalty-free license, with the right to sublicense MIPS’ licensees and customers, under Recipient’s Intellectual property rights, to use and disclose such comments and suggestions in any manner MIPS chooses and to display, perform, copy, make, have made, use, sell, offer to sell, import, and otherwise dispose of MIPS’ and its sublicensee’s products embodying such comments and suggestions in any manner and via any media MIPS chooses, without reference to the source.
+2025-07-10T15:03:08.1573713Z 
+2025-07-10T15:03:08.1575220Z 7. WARRANTY DISCLAIMER. MIPS AND ITS SUPPLIERS MAKE NO WARRANTIES WITH RESPECT TO EVALUATION MATERIALS, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OR ANY IMPLIED WARRANTY OF NONINFRINGEMENT WITH RESPECT TO THIRD PARTY INTELLECTUAL PROPERTY. RECIPIENT ACKNOWLEDGES AND AGREES THAT THE EVALUATION MATERIALS ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND.
+2025-07-10T15:03:08.1576936Z 
+2025-07-10T15:03:08.1578601Z 8. LIMITATION OF LIABILITY. MIPS AND ITS SUPPLIERS SHALL NOT BE LIABLE FOR ANY PROPERTY DAMAGE, PERSONAL INJURY, LOSS OF PROFITS, INTERRUPTION OF BUSINESS OR FOR ANY DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL OR INCIDENTAL DAMAGES, HOWEVER CAUSED OR ALLEGED, WHETHER FOR BREACH OF WARRANTY, CONTRACT, STRICT LIABILITY OR OTHERWISE, INCLUDING WITHOUT LIMITATION, UNDER TORT OR OTHER LEGAL THEORY. MIPS AND ITS SUPPLIERS DISCLAIM ANY AND ALL LIABILITY, INCLUDING LIABILITY FOR INFRINGEMENT OF ANY INTELLECTUAL PROPERTY RIGHTS OF ANY KIND RELATING TO THE EVALUATION MATERIALS.
+2025-07-10T15:03:08.1580327Z 
+2025-07-10T15:03:08.1580969Z 9. EXPIRATION. MIPS may terminate this Agreement immediately after a breach by Recipient or otherwise at MIPS’ reasonable discretion and upon five (5) business days’ notice to Recipient.
+2025-07-10T15:03:08.1581563Z 
+2025-07-10T15:03:08.1581628Z 10. GENERAL.
+2025-07-10T15:03:08.1581730Z 
+2025-07-10T15:03:08.1584622Z 10.1 Controlling Law. This Agreement shall be governed by California law excluding its choice of law rules. With the exception of MIPS’ rights to enforce its intellectual property rights and any confidentiality obligations under this Agreement or any licenses distributed with the Evaluation Materials, all disputes and any claims arising under or relating to this Agreement shall be subject to the exclusive jurisdiction and venue of the state and federal courts located in Santa Clara County, California. Each party hereby agrees to jurisdiction and venue in the courts set forth in the preceding sentence. The parties agree that the United Nations Convention on Contracts for the International Sale of Goods is specifically excluded from application to this Agreement. The parties consent to the personal jurisdiction of the above courts.
+2025-07-10T15:03:08.1587383Z 
+2025-07-10T15:03:08.1588812Z 10.2 Remedies. Recipient acknowledges and agrees that any breach of confidentiality obligations under this Agreement or any licenses distributed with the Evaluation Materials, as well as any disclosure, commercialization, or public use of the Evaluation Materials, would cause irreparable injury to MIPS, and therefore Recipient agrees to consent to, and hereby consents to, the grant of an injunction by any court of competent jurisdiction in the event of an actual or threatened breach.
+2025-07-10T15:03:08.1590287Z 
+2025-07-10T15:03:08.1592058Z 10.3 Assignment. Recipient may not delegate, assign or transfer this Agreement, the license granted or any of Recipient’s rights, obligations, or duties hereunder, expressly, by implication, by operation of law, by way of merger (regardless of whether Recipient is the surviving entity) or acquisition, or otherwise and any attempt to do so, without MIPS’ express prior written consent, shall be ineffective, null and void. MIPS may freely assign this Agreement, and its rights and obligations hereunder, in its sole discretion.
+2025-07-10T15:03:08.1593603Z 
+2025-07-10T15:03:08.1594911Z 10.4 Entire Agreement. This Agreement constitutes the entire agreement between Recipient and MIPS and supersedes in their entirety any and all oral or written agreements previously existing between Recipient and MIPS with respect to the subject matter hereof. This Agreement may only be amended or supplemented by a writing that refers explicitly to this Agreement and that is signed or otherwise accepted by duly authorized representatives of Recipient and MIPS.
+2025-07-10T15:03:08.1596514Z 
+2025-07-10T15:03:08.1597803Z 10.5 Severability. In the event that any provision of this Agreement is finally adjudicated to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render this Agreement unenforceable or invalid as a whole, and, in such event, such unenforceable or invalid provision shall be interpreted so as to best accomplish the objectives of such provision within the limits of applicable law or applicable court decisions.
+2025-07-10T15:03:08.1599297Z 
+2025-07-10T15:03:08.1603417Z 10.6 Export Regulations / Export Control. Recipient shall not export, either directly or indirectly, any product, service or technical data or system incorporating the Evaluation Materials without first obtaining any required license or other necessary approval from the U.S. Department of Commerce or any other governing agency or department of the United States Government. In the event any product is exported from the United States or re-exported from a foreign destination by Recipient, Recipient shall ensure that the distribution and export/re-export or import of the product is in compliance with all applicable laws, regulations, orders, or other restrictions of the U.S. Export Administration Regulations and the appropriate foreign government. Recipient agrees that neither it nor any of its subsidiaries will export/re-export any technical data, process, product, or service, directly or indirectly, to any country for which the United States government or any agency thereof or the foreign government from where it is shipping requires an export license, or other governmental approval, without first obtaining such license or approval. Recipient also agrees to implement measures to ensure that foreign national employees are authorized to receive any information controlled by U.S. export control laws. An export is "deemed" to take place when information is released to a foreign national wherever located.
+2025-07-10T15:03:08.1607972Z 
+2025-07-10T15:03:08.1611176Z 10.7 Special Terms for Pre-Release Materials. If so indicated in the description of the Evaluation Software, the Evaluation Software may contain Pre-Release Materials. Recipient hereby understands, acknowledges and agrees that: (i) Pre-Release Materials may not be fully tested and may contain bugs or errors; (ii) Pre-Release materials are not suitable for commercial release in their current state; (iii) regulatory approvals for Pre-Release Materials (such as UL or FCC) have not been obtained, and Pre-Release Materials may therefore not be certified for use in certain countries or environments or may not be suitable for certain applications and (iv) MIPS can provide no assurance that it will ever produce or make generally available a production version of the Pre-Release Materials . MIPS is not under any obligation to develop and/or release or offer for sale or license a final product based upon the Pre-Release Materials and may unilaterally elect to abandon the Pre-Release Materials or any such development platform at any time and without any obligation or liability whatsoever to Recipient or any other person.
+2025-07-10T15:03:08.1614570Z 
+2025-07-10T15:03:08.1615154Z ANY PRE-RELEASE MATERIALS ARE NON-QUALIFIED AND, AS SUCH, ARE PROVIDED “AS IS” AND “AS AVAILABLE”, POSSIBLY WITH FAULTS, AND WITHOUT REPRESENTATION OR WARRANTY OF ANY KIND.
+2025-07-10T15:03:08.1615688Z 
+2025-07-10T15:03:08.1617612Z 10.8 Open Source Software. In the event Open Source software is included with Evaluation Software, such Open Source software is licensed pursuant to the applicable Open Source software license agreement identified in the Open Source software comments in the applicable source code file(s) and/or file header as indicated in the Evaluation Software. Additional detail may be available (where applicable) in the accompanying on-line documentation. With respect to the Open Source software, nothing in this Agreement limits any rights under, or grants rights that supersede, the terms of any applicable Open Source software license agreement.
+2025-07-10T15:03:08.1619590Z ---------------------------------------
+2025-07-10T15:03:08.1619861Z Accept? (y/N): All SDK package licenses accepted
+2025-07-10T15:03:08.1620200Z 
+2025-07-10T15:03:08.1620432Z [command]/usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager tools
+2025-07-10T15:03:08.8455305Z Loading package information...                                                  
+2025-07-10T15:03:08.9358607Z Loading local repository...                                                     
+2025-07-10T15:03:08.9364150Z [                                       ] 3% Loading local repository...        
+2025-07-10T15:03:08.9468417Z [                                       ] 3% Fetch remote repository...         
+2025-07-10T15:03:09.2777032Z [=                                      ] 3% Fetch remote repository...         
+2025-07-10T15:03:09.3480908Z [=                                      ] 4% Fetch remote repository...         
+2025-07-10T15:03:09.3807406Z [=                                      ] 5% Fetch remote repository...         
+2025-07-10T15:03:09.4315412Z [==                                     ] 5% Fetch remote repository...         
+2025-07-10T15:03:09.5069672Z [==                                     ] 6% Fetch remote repository...         
+2025-07-10T15:03:09.5776329Z [==                                     ] 7% Fetch remote repository...         
+2025-07-10T15:03:09.5785146Z [==                                     ] 7% Computing updates...               
+2025-07-10T15:03:09.5857774Z [===                                    ] 8% Computing updates...               
+2025-07-10T15:03:09.6037921Z [===                                    ] 10% Computing updates...              
+2025-07-10T15:03:10.0643750Z [===                                    ] 10% Installing Android Emulator       
+2025-07-10T15:03:10.1885693Z [===                                    ] 10% Downloading emulator-linux_x64-136
+2025-07-10T15:03:10.3110853Z [====                                   ] 10% Downloading emulator-linux_x64-136
+2025-07-10T15:03:10.4854092Z [====                                   ] 11% Downloading emulator-linux_x64-136
+2025-07-10T15:03:10.6539962Z [====                                   ] 12% Downloading emulator-linux_x64-136
+2025-07-10T15:03:10.8323433Z [=====                                  ] 13% Downloading emulator-linux_x64-136
+2025-07-10T15:03:10.9900765Z [=====                                  ] 14% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.0853647Z [=====                                  ] 15% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.1531014Z [======                                 ] 15% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.3147512Z [======                                 ] 16% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.4783178Z [======                                 ] 17% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.6425779Z [=======                                ] 18% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.8082277Z [=======                                ] 19% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.8868977Z [=======                                ] 20% Downloading emulator-linux_x64-136
+2025-07-10T15:03:11.9889235Z [========                               ] 20% Downloading emulator-linux_x64-136
+2025-07-10T15:03:12.1014074Z [========                               ] 21% Downloading emulator-linux_x64-136
+2025-07-10T15:03:12.2512972Z [========                               ] 21% Unzipping...                      
+2025-07-10T15:03:12.2514269Z [========                               ] 21% Unzipping... emulator/            
+2025-07-10T15:03:12.2533140Z [========                               ] 21% Unzipping... emulator/LICENSE     
+2025-07-10T15:03:12.2533851Z [========                               ] 21% Unzipping... emulator/qemu/       
+2025-07-10T15:03:12.2594540Z [========                               ] 21% Unzipping... emulator/NOTICE.txt  
+2025-07-10T15:03:12.2598729Z [========                               ] 21% Unzipping... emulator/android-info
+2025-07-10T15:03:12.2602002Z [========                               ] 21% Unzipping... emulator/include/    
+2025-07-10T15:03:12.2604655Z [========                               ] 21% Unzipping... emulator/resources/  
+2025-07-10T15:03:12.2794184Z [========                               ] 21% Unzipping... emulator/emulator    
+2025-07-10T15:03:12.3386899Z [========                               ] 21% Unzipping... emulator/nimble_bridg
+2025-07-10T15:03:12.3391316Z [========                               ] 21% Unzipping... emulator/lib/        
+2025-07-10T15:03:12.3392019Z [========                               ] 21% Unzipping... emulator/bin64/      
+2025-07-10T15:03:12.3392734Z [========                               ] 21% Unzipping... emulator/lib64/      
+2025-07-10T15:03:12.3588145Z [========                               ] 21% Unzipping... emulator/emulator-che
+2025-07-10T15:03:12.3786339Z [========                               ] 21% Unzipping... emulator/crashreport 
+2025-07-10T15:03:12.3808979Z [========                               ] 21% Unzipping... emulator/crashpad_han
+2025-07-10T15:03:12.3952210Z [========                               ] 22% Unzipping... emulator/crashpad_han
+2025-07-10T15:03:12.4170590Z [========                               ] 22% Unzipping... emulator/qsn         
+2025-07-10T15:03:12.4190133Z [========                               ] 22% Unzipping... emulator/mksdcard    
+2025-07-10T15:03:12.4193179Z [========                               ] 22% Unzipping... emulator/NOTICE.csv  
+2025-07-10T15:03:12.5488018Z [========                               ] 22% Unzipping... emulator/netsimd     
+2025-07-10T15:03:12.5491103Z [========                               ] 22% Unzipping... emulator/source.prope
+2025-07-10T15:03:12.5579458Z [========                               ] 22% Unzipping... emulator/qemu-img    
+2025-07-10T15:03:12.7228015Z [========                               ] 22% Unzipping... emulator/qemu/linux-x
+2025-07-10T15:03:13.0376668Z [=========                              ] 23% Unzipping... emulator/qemu/linux-x
+2025-07-10T15:03:13.3968431Z [=========                              ] 24% Unzipping... emulator/qemu/linux-x
+2025-07-10T15:03:13.5754785Z [=========                              ] 25% Unzipping... emulator/qemu/linux-x
+2025-07-10T15:03:13.6013121Z [==========                             ] 25% Unzipping... emulator/qemu/linux-x
+2025-07-10T15:03:13.6118625Z [==========                             ] 25% Unzipping... emulator/include/flat
+2025-07-10T15:03:13.6439559Z [==========                             ] 25% Unzipping... emulator/resources/To
+2025-07-10T15:03:13.6440532Z [==========                             ] 25% Unzipping... emulator/resources/ma
+2025-07-10T15:03:13.6453742Z [==========                             ] 25% Unzipping... emulator/resources/po
+2025-07-10T15:03:13.6455254Z [==========                             ] 25% Unzipping... emulator/resources/ma
+2025-07-10T15:03:13.6458475Z [==========                             ] 25% Unzipping... emulator/resources/To
+2025-07-10T15:03:13.6562082Z [==========                             ] 25% Unzipping... emulator/resources/ma
+2025-07-10T15:03:13.6569120Z [==========                             ] 25% Unzipping... emulator/lib/emulated
+2025-07-10T15:03:13.6590513Z [==========                             ] 25% Unzipping... emulator/lib/ca-bundl
+2025-07-10T15:03:13.6593658Z [==========                             ] 25% Unzipping... emulator/lib/grpc_end
+2025-07-10T15:03:13.6600703Z [==========                             ] 25% Unzipping... emulator/lib/emulator
+2025-07-10T15:03:13.6604730Z [==========                             ] 25% Unzipping... emulator/lib/emu-orig
+2025-07-10T15:03:13.6737816Z [==========                             ] 25% Unzipping... emulator/lib/libflatb
+2025-07-10T15:03:13.6921919Z [==========                             ] 26% Unzipping... emulator/lib/libflatb
+2025-07-10T15:03:13.6924743Z [==========                             ] 26% Unzipping... emulator/lib/rtc_serv
+2025-07-10T15:03:13.6927536Z [==========                             ] 26% Unzipping... emulator/lib/waterfal
+2025-07-10T15:03:13.6930260Z [==========                             ] 26% Unzipping... emulator/lib/emulator
+2025-07-10T15:03:13.6930960Z [==========                             ] 26% Unzipping... emulator/lib/pkgconfi
+2025-07-10T15:03:13.6934174Z [==========                             ] 26% Unzipping... emulator/lib/snapshot
+2025-07-10T15:03:13.6942258Z [==========                             ] 26% Unzipping... emulator/lib/hostapd.
+2025-07-10T15:03:13.6946458Z [==========                             ] 26% Unzipping... emulator/lib/advanced
+2025-07-10T15:03:13.6947738Z [==========                             ] 26% Unzipping... emulator/lib/pc-bios/
+2025-07-10T15:03:13.6952410Z [==========                             ] 26% Unzipping... emulator/lib/ui_contr
+2025-07-10T15:03:13.6954686Z [==========                             ] 26% Unzipping... emulator/lib/control_
+2025-07-10T15:03:13.6956333Z [==========                             ] 26% Unzipping... emulator/lib/cmake/  
+2025-07-10T15:03:13.6959401Z [==========                             ] 26% Unzipping... emulator/lib/emulator
+2025-07-10T15:03:13.6963229Z [==========                             ] 26% Unzipping... emulator/lib/hardware
+2025-07-10T15:03:13.6966138Z [==========                             ] 26% Unzipping... emulator/lib/adb_serv
+2025-07-10T15:03:13.6970026Z [==========                             ] 26% Unzipping... emulator/lib/ice_conf
+2025-07-10T15:03:13.6973391Z [==========                             ] 26% Unzipping... emulator/lib/snapshot
+2025-07-10T15:03:13.6976325Z [==========                             ] 26% Unzipping... emulator/lib/rtc_serv
+2025-07-10T15:03:13.6980201Z [==========                             ] 26% Unzipping... emulator/lib/pkgconfi
+2025-07-10T15:03:13.7182975Z [==========                             ] 26% Unzipping... emulator/lib/pc-bios/
+2025-07-10T15:03:13.7193524Z [==========                             ] 26% Unzipping... emulator/lib/cmake/fl
+2025-07-10T15:03:13.7216447Z [==========                             ] 26% Unzipping... emulator/bin64/mkfs.e
+2025-07-10T15:03:13.7229669Z [==========                             ] 26% Unzipping... emulator/bin64/resize
+2025-07-10T15:03:13.7262274Z [==========                             ] 26% Unzipping... emulator/bin64/fsck.e
+2025-07-10T15:03:13.7296484Z [==========                             ] 26% Unzipping... emulator/bin64/e2fsck
+2025-07-10T15:03:13.7317644Z [==========                             ] 26% Unzipping... emulator/bin64/tune2f
+2025-07-10T15:03:13.7362847Z [==========                             ] 26% Unzipping... emulator/lib64/libabs
+2025-07-10T15:03:13.7370787Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:13.7371909Z [==========                             ] 26% Unzipping... emulator/lib64/qt/   
+2025-07-10T15:03:13.8067759Z [==========                             ] 26% Unzipping... emulator/lib64/libgfx
+2025-07-10T15:03:13.8193755Z [==========                             ] 26% Unzipping... emulator/lib64/libpro
+2025-07-10T15:03:13.8258358Z [==========                             ] 26% Unzipping... emulator/lib64/libc++
+2025-07-10T15:03:13.8266359Z [==========                             ] 26% Unzipping... emulator/lib64/libdrm
+2025-07-10T15:03:13.8453895Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:13.8455126Z [==========                             ] 26% Unzipping... emulator/lib64/vulkan
+2025-07-10T15:03:13.8561601Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:13.8633175Z [==========                             ] 26% Unzipping... emulator/lib64/libgli
+2025-07-10T15:03:13.8635757Z [==========                             ] 26% Unzipping... emulator/lib64/libima
+2025-07-10T15:03:13.8637051Z [==========                             ] 26% Unzipping... emulator/lib64/gles_m
+2025-07-10T15:03:13.8699006Z [==========                             ] 26% Unzipping... emulator/lib64/libc++
+2025-07-10T15:03:13.8752989Z [==========                             ] 26% Unzipping... emulator/lib64/libzst
+2025-07-10T15:03:13.8757264Z [==========                             ] 26% Unzipping... emulator/lib64/libemu
+2025-07-10T15:03:13.8762754Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:13.8763372Z [==========                             ] 26% Unzipping... emulator/lib64/gles_s
+2025-07-10T15:03:13.8781354Z [==========                             ] 26% Unzipping... emulator/lib64/libtcm
+2025-07-10T15:03:13.8851228Z [==========                             ] 26% Unzipping... emulator/lib64/libsha
+2025-07-10T15:03:14.0235770Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:14.0237493Z [==========                             ] 26% Unzipping... emulator/lib64/gles_a
+2025-07-10T15:03:14.0362131Z [==========                             ] 26% Unzipping... emulator/lib64/libpro
+2025-07-10T15:03:14.0587834Z [==========                             ] 26% Unzipping... emulator/lib64/liband
+2025-07-10T15:03:14.0588847Z [==========                             ] 26% Unzipping... emulator/lib64/qt/res
+2025-07-10T15:03:14.0589406Z [==========                             ] 26% Unzipping... emulator/lib64/qt/tra
+2025-07-10T15:03:14.0591492Z [==========                             ] 26% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:14.0592071Z [==========                             ] 26% Unzipping... emulator/lib64/qt/plu
+2025-07-10T15:03:14.0607799Z [==========                             ] 26% Unzipping... emulator/lib64/qt/res
+2025-07-10T15:03:14.1368115Z [==========                             ] 27% Unzipping... emulator/lib64/qt/res
+2025-07-10T15:03:14.2588990Z [==========                             ] 27% Unzipping... emulator/lib64/qt/tra
+2025-07-10T15:03:14.3495051Z [==========                             ] 27% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:14.6973330Z [===========                            ] 28% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:15.0639483Z [===========                            ] 29% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:15.2475636Z [===========                            ] 30% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:15.3351126Z [============                           ] 30% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:15.4594053Z [============                           ] 31% Unzipping... emulator/lib64/qt/lib
+2025-07-10T15:03:15.4713002Z [============                           ] 31% Unzipping... emulator/lib64/qt/plu
+2025-07-10T15:03:15.7188666Z [============                           ] 31% Unzipping... emulator/lib64/vulkan
+2025-07-10T15:03:15.8063451Z [============                           ] 32% Unzipping... emulator/lib64/vulkan
+2025-07-10T15:03:15.9952823Z [============                           ] 32% Unzipping... emulator/lib64/gles_m
+2025-07-10T15:03:16.0648684Z [============                           ] 32% Unzipping... emulator/lib64/gles_s
+2025-07-10T15:03:16.1230277Z [============                           ] 32% Unzipping... emulator/lib64/gles_a
+2025-07-10T15:03:16.1863646Z [=============                          ] 33% Unzipping... emulator/lib64/gles_a
+2025-07-10T15:03:16.4479381Z [=====================                  ] 55% Unzipping... emulator/lib64/gles_a
+2025-07-10T15:03:16.5972692Z [=====================                  ] 55% Installing Android SDK Tools emula
+2025-07-10T15:03:16.6095643Z [=====================                  ] 55% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:16.6521866Z [======================                 ] 55% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:16.7389623Z [======================                 ] 56% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:16.8202517Z [======================                 ] 57% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:16.8989623Z [=======================                ] 58% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:16.9712219Z [=======================                ] 59% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.0146918Z [=======================                ] 60% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.0540542Z [========================               ] 60% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.1449032Z [========================               ] 61% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.2325477Z [========================               ] 62% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.3227091Z [=========================              ] 63% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.4057385Z [=========================              ] 64% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.4416890Z [=========================              ] 65% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.4819518Z [==========================             ] 65% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.5372991Z [==========================             ] 66% Downloading sdk-tools-linux-433379
+2025-07-10T15:03:17.5900359Z [==========================             ] 66% Unzipping... emulator/lib64/gles_a
+2025-07-10T15:03:17.5901356Z [==========================             ] 66% Unzipping... tools/               
+2025-07-10T15:03:17.5901892Z [==========================             ] 66% Unzipping... tools/proguard/      
+2025-07-10T15:03:17.5904601Z [==========================             ] 66% Unzipping... tools/proguard/licens
+2025-07-10T15:03:17.5905552Z [==========================             ] 66% Unzipping... tools/proguard/lib/  
+2025-07-10T15:03:17.5956409Z [==========================             ] 66% Unzipping... tools/proguard/lib/pr
+2025-07-10T15:03:17.5959166Z [==========================             ] 66% Unzipping... tools/proguard/lib/re
+2025-07-10T15:03:17.5967971Z [==========================             ] 66% Unzipping... tools/proguard/lib/pr
+2025-07-10T15:03:17.5968566Z [==========================             ] 66% Unzipping... tools/proguard/ant/  
+2025-07-10T15:03:17.5970972Z [==========================             ] 66% Unzipping... tools/proguard/ant/ta
+2025-07-10T15:03:17.5971558Z [==========================             ] 66% Unzipping... tools/proguard/docs/ 
+2025-07-10T15:03:17.5973856Z [==========================             ] 66% Unzipping... tools/proguard/docs/f
+2025-07-10T15:03:17.5980701Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.5982616Z [==========================             ] 66% Unzipping... tools/proguard/docs/d
+2025-07-10T15:03:17.5985806Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.5988900Z [==========================             ] 66% Unzipping... tools/proguard/docs/F
+2025-07-10T15:03:17.5993015Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.5994944Z [==========================             ] 66% Unzipping... tools/proguard/docs/l
+2025-07-10T15:03:17.5999300Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6002655Z [==========================             ] 66% Unzipping... tools/proguard/docs/d
+2025-07-10T15:03:17.6008793Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6011027Z [==========================             ] 66% Unzipping... tools/proguard/docs/r
+2025-07-10T15:03:17.6013104Z [==========================             ] 66% Unzipping... tools/proguard/docs/d
+2025-07-10T15:03:17.6015292Z [==========================             ] 66% Unzipping... tools/proguard/docs/t
+2025-07-10T15:03:17.6018007Z [==========================             ] 66% Unzipping... tools/proguard/docs/f
+2025-07-10T15:03:17.6022639Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6025241Z [==========================             ] 66% Unzipping... tools/proguard/docs/t
+2025-07-10T15:03:17.6027462Z [==========================             ] 66% Unzipping... tools/proguard/docs/i
+2025-07-10T15:03:17.6032805Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6034823Z [==========================             ] 66% Unzipping... tools/proguard/docs/m
+2025-07-10T15:03:17.6038000Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6039687Z [==========================             ] 66% Unzipping... tools/proguard/docs/q
+2025-07-10T15:03:17.6043161Z [==========================             ] 66% Unzipping... tools/proguard/docs/G
+2025-07-10T15:03:17.6045198Z [==========================             ] 66% Unzipping... tools/proguard/docs/t
+2025-07-10T15:03:17.6057589Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6094838Z [==========================             ] 66% Unzipping... tools/proguard/docs/m
+2025-07-10T15:03:17.6098290Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6099391Z [==========================             ] 66% Unzipping... tools/proguard/docs/G
+2025-07-10T15:03:17.6103112Z [==========================             ] 66% Unzipping... tools/proguard/docs/c
+2025-07-10T15:03:17.6107026Z [==========================             ] 66% Unzipping... tools/proguard/docs/a
+2025-07-10T15:03:17.6114392Z [==========================             ] 66% Unzipping... tools/proguard/docs/s
+2025-07-10T15:03:17.6116698Z [==========================             ] 66% Unzipping... tools/proguard/docs/d
+2025-07-10T15:03:17.6180156Z [==========================             ] 66% Unzipping... tools/proguard/exampl
+2025-07-10T15:03:17.6180890Z [==========================             ] 66% Unzipping... tools/proguard/bin/  
+2025-07-10T15:03:17.6184844Z [==========================             ] 66% Unzipping... tools/proguard/bin/pr
+2025-07-10T15:03:17.6186964Z [==========================             ] 66% Unzipping... tools/proguard/bin/re
+2025-07-10T15:03:17.6189250Z [==========================             ] 66% Unzipping... tools/proguard/README
+2025-07-10T15:03:17.6193905Z [==========================             ] 66% Unzipping... tools/proguard/progua
+2025-07-10T15:03:17.6194421Z [==========================             ] 66% Unzipping... tools/lib/           
+2025-07-10T15:03:17.6227835Z [==========================             ] 66% Unzipping... tools/lib/bcpkix-jdk1
+2025-07-10T15:03:17.6234802Z [==========================             ] 66% Unzipping... tools/lib/org-eclipse
+2025-07-10T15:03:17.6244820Z [==========================             ] 66% Unzipping... tools/lib/manifest-me
+2025-07-10T15:03:17.6250128Z [==========================             ] 66% Unzipping... tools/lib/jcommander-
+2025-07-10T15:03:17.6262234Z [==========================             ] 66% Unzipping... tools/lib/gson-2.3.ja
+2025-07-10T15:03:17.6264146Z [==========================             ] 66% Unzipping... tools/lib/ddms-26.0.0
+2025-07-10T15:03:17.6267684Z [==========================             ] 66% Unzipping... tools/lib/asm-tree-5.
+2025-07-10T15:03:17.6312781Z [==========================             ] 66% Unzipping... tools/lib/uast-26.0.0
+2025-07-10T15:03:17.6320990Z [==========================             ] 66% Unzipping... tools/lib/dexlib2-2.2
+2025-07-10T15:03:17.6359155Z [==========================             ] 67% Unzipping... tools/lib/dexlib2-2.2
+2025-07-10T15:03:17.6361330Z [==========================             ] 67% Unzipping... tools/lib/android.el 
+2025-07-10T15:03:17.6366421Z [==========================             ] 67% Unzipping... tools/lib/apkanalyzer
+2025-07-10T15:03:17.6486554Z [==========================             ] 67% Unzipping... tools/lib/guava-22.0.
+2025-07-10T15:03:17.6513901Z [==========================             ] 67% Unzipping... tools/lib/lint-api-26
+2025-07-10T15:03:17.6522268Z [==========================             ] 67% Unzipping... tools/lib/baksmali-2.
+2025-07-10T15:03:17.6526169Z [==========================             ] 67% Unzipping... tools/lib/shared.jar 
+2025-07-10T15:03:17.6530523Z [==========================             ] 67% Unzipping... tools/lib/jsr305-1.3.
+2025-07-10T15:03:17.6554130Z [==========================             ] 67% Unzipping... tools/lib/httpclient-
+2025-07-10T15:03:17.6662318Z [==========================             ] 67% Unzipping... tools/lib/ecj-4.6.1.j
+2025-07-10T15:03:17.6666320Z [==========================             ] 67% Unzipping... tools/lib/jobb-26.0.0
+2025-07-10T15:03:17.6683679Z [==========================             ] 67% Unzipping... tools/lib/jcommon-1.0
+2025-07-10T15:03:17.6688145Z [==========================             ] 67% Unzipping... tools/lib/kxml2-2.3.0
+2025-07-10T15:03:17.6752579Z [==========================             ] 67% Unzipping... tools/lib/jfreechart-
+2025-07-10T15:03:17.6762728Z [==========================             ] 67% Unzipping... tools/lib/common-26.0
+2025-07-10T15:03:17.6817774Z [==========================             ] 67% Unzipping... tools/lib/lint-checks
+2025-07-10T15:03:17.6929576Z [==========================             ] 67% Unzipping... tools/lib/kotlin-refl
+2025-07-10T15:03:17.6932986Z [==========================             ] 67% Unzipping... tools/lib/builder-mod
+2025-07-10T15:03:17.6967134Z [==========================             ] 67% Unzipping... tools/lib/sdklib-26.0
+2025-07-10T15:03:17.6973686Z [==========================             ] 67% Unzipping... tools/lib/layoutlib-a
+2025-07-10T15:03:17.6976512Z [==========================             ] 67% Unzipping... tools/lib/annotations
+2025-07-10T15:03:17.6981959Z [==========================             ] 67% Unzipping... tools/lib/fat32lib.ja
+2025-07-10T15:03:17.6985282Z [==========================             ] 67% Unzipping... tools/lib/jsr305-3.0.
+2025-07-10T15:03:17.7038474Z [==========================             ] 67% Unzipping... tools/lib/org-eclipse
+2025-07-10T15:03:17.7040897Z [==========================             ] 67% Unzipping... tools/lib/error_prone
+2025-07-10T15:03:17.7048669Z [==========================             ] 67% Unzipping... tools/lib/org-eclipse
+2025-07-10T15:03:17.7050816Z [==========================             ] 67% Unzipping... tools/lib/animal-snif
+2025-07-10T15:03:17.7085064Z [==========================             ] 67% Unzipping... tools/lib/asset-studi
+2025-07-10T15:03:17.7113617Z [===========================            ] 68% Unzipping... tools/lib/asset-studi
+2025-07-10T15:03:17.7125602Z [===========================            ] 68% Unzipping... tools/lib/repository-
+2025-07-10T15:03:17.7128938Z [===========================            ] 68% Unzipping... tools/lib/dvlib-26.0.
+2025-07-10T15:03:17.7157691Z [===========================            ] 68% Unzipping... tools/lib/jsilver-1.0
+2025-07-10T15:03:17.7162160Z [===========================            ] 68% Unzipping... tools/lib/asm-5.1.jar
+2025-07-10T15:03:17.7164577Z [===========================            ] 68% Unzipping... tools/lib/devices.xml
+2025-07-10T15:03:17.7168893Z [===========================            ] 68% Unzipping... tools/lib/asm-analysi
+2025-07-10T15:03:17.7191239Z [===========================            ] 68% Unzipping... tools/lib/hierarchyvi
+2025-07-10T15:03:17.7198325Z [===========================            ] 68% Unzipping... tools/lib/monkeyrunne
+2025-07-10T15:03:17.7205061Z [===========================            ] 68% Unzipping... tools/lib/uiautomator
+2025-07-10T15:03:17.7207444Z [===========================            ] 68% Unzipping... tools/lib/archquery-2
+2025-07-10T15:03:17.7214211Z [===========================            ] 68% Unzipping... tools/lib/chimpchat-2
+2025-07-10T15:03:17.7216288Z [===========================            ] 68% Unzipping... tools/lib/explainer.j
+2025-07-10T15:03:17.7234879Z [===========================            ] 68% Unzipping... tools/lib/ddmlib-26.0
+2025-07-10T15:03:17.7238372Z [===========================            ] 68% Unzipping... tools/lib/swtmenubar-
+2025-07-10T15:03:17.7307799Z [===========================            ] 68% Unzipping... tools/lib/osgi-4.0.0.
+2025-07-10T15:03:17.7308480Z [===========================            ] 68% Unzipping... tools/lib/x86_64/    
+2025-07-10T15:03:17.7379512Z [===========================            ] 68% Unzipping... tools/lib/x86_64/swt.
+2025-07-10T15:03:17.7847976Z [===========================            ] 68% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:17.8608108Z [===========================            ] 69% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:17.9061017Z [===========================            ] 70% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:17.9488483Z [============================           ] 70% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.0950303Z [============================           ] 71% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.0951541Z [============================           ] 71% Unzipping... tools/lib/httpmime-4.
+2025-07-10T15:03:18.0954206Z [============================           ] 71% Unzipping... tools/lib/annotations
+2025-07-10T15:03:18.0967961Z [============================           ] 71% Unzipping... tools/lib/lint-26.0.0
+2025-07-10T15:03:18.0974014Z [============================           ] 71% Unzipping... tools/lib/apkanalyzer
+2025-07-10T15:03:18.0980347Z [============================           ] 71% Unzipping... tools/lib/binary-reso
+2025-07-10T15:03:18.0994171Z [============================           ] 71% Unzipping... tools/lib/jopt-simple
+2025-07-10T15:03:18.0995523Z [============================           ] 71% Unzipping... tools/lib/util-2.2.1.
+2025-07-10T15:03:18.1011831Z [============================           ] 71% Unzipping... tools/lib/ddmuilib-26
+2025-07-10T15:03:18.1026668Z [============================           ] 72% Unzipping... tools/lib/ddmuilib-26
+2025-07-10T15:03:18.1073877Z [============================           ] 72% Unzipping... tools/lib/sdk-common-
+2025-07-10T15:03:18.1082408Z [============================           ] 72% Unzipping... tools/lib/traceview-2
+2025-07-10T15:03:18.1096277Z [============================           ] 72% Unzipping... tools/lib/httpcore-4.
+2025-07-10T15:03:18.1098922Z [============================           ] 72% Unzipping... tools/lib/screenshot2
+2025-07-10T15:03:18.1112419Z [============================           ] 72% Unzipping... tools/lib/commons-cod
+2025-07-10T15:03:18.1114315Z [============================           ] 72% Unzipping... tools/lib/proguard-pr
+2025-07-10T15:03:18.1666247Z [============================           ] 72% Unzipping... tools/lib/jython-stan
+2025-07-10T15:03:18.1723936Z [=============================          ] 73% Unzipping... tools/lib/jython-stan
+2025-07-10T15:03:18.1727566Z [=============================          ] 73% Unzipping... tools/lib/annotations
+2025-07-10T15:03:18.1732424Z [=============================          ] 73% Unzipping... tools/lib/commons-log
+2025-07-10T15:03:18.1796778Z [=============================          ] 73% Unzipping... tools/lib/protobuf-ja
+2025-07-10T15:03:18.1802043Z [=============================          ] 73% Unzipping... tools/lib/fakeadbserv
+2025-07-10T15:03:18.1954314Z [=============================          ] 73% Unzipping... tools/lib/bcprov-jdk1
+2025-07-10T15:03:18.1955081Z [=============================          ] 73% Unzipping... tools/lib/x86/       
+2025-07-10T15:03:18.2021325Z [=============================          ] 73% Unzipping... tools/lib/x86/swt.jar
+2025-07-10T15:03:18.2064917Z [=============================          ] 73% Unzipping... tools/lib/kotlin-stdl
+2025-07-10T15:03:18.2088091Z [=============================          ] 73% Unzipping... tools/lib/commons-com
+2025-07-10T15:03:18.2123411Z [=============================          ] 73% Unzipping... tools/lib/lombok-ast-
+2025-07-10T15:03:18.2152589Z [=============================          ] 73% Unzipping... tools/lib/trove4j-201
+2025-07-10T15:03:18.2381257Z [=============================          ] 73% Unzipping... tools/lib/intellij-co
+2025-07-10T15:03:18.2529693Z [=============================          ] 74% Unzipping... tools/lib/intellij-co
+2025-07-10T15:03:18.2542519Z [=============================          ] 74% Unzipping... tools/lib/jimfs-1.1.j
+2025-07-10T15:03:18.2549285Z [=============================          ] 74% Unzipping... tools/lib/j2objc-anno
+2025-07-10T15:03:18.2551442Z [=============================          ] 74% Unzipping... tools/lib/jfreechart-
+2025-07-10T15:03:18.3005585Z [=============================          ] 74% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.3394229Z [=============================          ] 75% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.3757314Z [==============================         ] 75% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.4589920Z [==============================         ] 76% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.5984070Z [==============================         ] 77% Unzipping... tools/lib/monitor-x86
+2025-07-10T15:03:18.5988510Z [==============================         ] 77% Unzipping... tools/lib/generator.j
+2025-07-10T15:03:18.5990313Z [==============================         ] 77% Unzipping... tools/source.properti
+2025-07-10T15:03:18.5990933Z [==============================         ] 77% Unzipping... tools/bin/           
+2025-07-10T15:03:18.5993145Z [==============================         ] 77% Unzipping... tools/bin/avdmanager 
+2025-07-10T15:03:18.5995625Z [==============================         ] 77% Unzipping... tools/bin/jobb       
+2025-07-10T15:03:18.5998069Z [==============================         ] 77% Unzipping... tools/bin/uiautomator
+2025-07-10T15:03:18.6000208Z [==============================         ] 77% Unzipping... tools/bin/apkanalyzer
+2025-07-10T15:03:18.6002482Z [==============================         ] 77% Unzipping... tools/bin/monkeyrunne
+2025-07-10T15:03:18.6004874Z [==============================         ] 77% Unzipping... tools/bin/archquery  
+2025-07-10T15:03:18.6007156Z [==============================         ] 77% Unzipping... tools/bin/sdkmanager 
+2025-07-10T15:03:18.6009512Z [==============================         ] 77% Unzipping... tools/bin/lint       
+2025-07-10T15:03:18.6011898Z [==============================         ] 77% Unzipping... tools/bin/screenshot2
+2025-07-10T15:03:18.6035294Z [==============================         ] 77% Unzipping... tools/NOTICE.txt     
+2025-07-10T15:03:18.6071599Z [==============================         ] 77% Unzipping... tools/emulator       
+2025-07-10T15:03:18.6095798Z [==============================         ] 77% Unzipping... tools/emulator-check 
+2025-07-10T15:03:18.6098046Z [==============================         ] 77% Unzipping... tools/monitor        
+2025-07-10T15:03:18.6100367Z [==============================         ] 77% Unzipping... tools/android        
+2025-07-10T15:03:18.6103293Z [==============================         ] 77% Unzipping... tools/mksdcard       
+2025-07-10T15:03:18.6104003Z [==============================         ] 77% Unzipping... tools/support/       
+2025-07-10T15:03:18.6109669Z [==============================         ] 77% Unzipping... tools/support/typos-d
+2025-07-10T15:03:18.6113419Z [==============================         ] 77% Unzipping... tools/support/typos-e
+2025-07-10T15:03:18.6114967Z [==============================         ] 77% Unzipping... tools/support/annotat
+2025-07-10T15:03:18.6123285Z [==============================         ] 77% Unzipping... tools/support/typos-e
+2025-07-10T15:03:18.6126413Z [==============================         ] 77% Unzipping... tools/support/typos-t
+2025-07-10T15:03:18.6131074Z [==============================         ] 77% Unzipping... tools/support/typos-p
+2025-07-10T15:03:18.6134575Z [==============================         ] 77% Unzipping... tools/support/typos-i
+2025-07-10T15:03:18.6137828Z [==============================         ] 77% Unzipping... tools/support/typos-n
+2025-07-10T15:03:18.6141356Z [==============================         ] 77% Unzipping... tools/support/typos-h
+2025-07-10T15:03:18.6446600Z [==============================         ] 78% Unzipping... tools/support/typos-h
+2025-07-10T15:03:18.6447192Z [=======================================] 100% Unzipping... tools/support/typos-
+2025-07-10T15:03:18.6500098Z 
+2025-07-10T15:03:18.6642598Z [command]/usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager platform-tools
+2025-07-10T15:03:19.3543584Z Loading package information...                                                  
+2025-07-10T15:03:19.4538173Z Loading local repository...                                                     
+2025-07-10T15:03:19.4543817Z [                                       ] 3% Loading local repository...        
+2025-07-10T15:03:19.4652422Z [                                       ] 3% Fetch remote repository...         
+2025-07-10T15:03:19.8082345Z [=                                      ] 3% Fetch remote repository...         
+2025-07-10T15:03:19.8671405Z [=                                      ] 4% Fetch remote repository...         
+2025-07-10T15:03:19.9089001Z [=                                      ] 5% Fetch remote repository...         
+2025-07-10T15:03:19.9514965Z [==                                     ] 5% Fetch remote repository...         
+2025-07-10T15:03:20.0313070Z [==                                     ] 6% Fetch remote repository...         
+2025-07-10T15:03:20.0920198Z [==                                     ] 7% Fetch remote repository...         
+2025-07-10T15:03:20.0922372Z [==                                     ] 7% Computing updates...               
+2025-07-10T15:03:20.1037316Z [===                                    ] 8% Computing updates...               
+2025-07-10T15:03:20.1091041Z [===                                    ] 10% Computing updates...              
+2025-07-10T15:03:20.1092682Z [=======================================] 100% Computing updates...             
+2025-07-10T15:03:20.1097888Z 

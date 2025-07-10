@@ -1,0 +1,67 @@
+﻿2025-07-10T15:03:01.1975035Z ##[group]Run actions/checkout@v4
+2025-07-10T15:03:01.1975837Z with:
+2025-07-10T15:03:01.1976338Z   repository: smojox/ticket-issuance
+2025-07-10T15:03:01.1976949Z   token: ***
+2025-07-10T15:03:01.1977260Z   ssh-strict: true
+2025-07-10T15:03:01.1977630Z   ssh-user: git
+2025-07-10T15:03:01.1977908Z   persist-credentials: true
+2025-07-10T15:03:01.1978343Z   clean: true
+2025-07-10T15:03:01.1978699Z   sparse-checkout-cone-mode: true
+2025-07-10T15:03:01.1979023Z   fetch-depth: 1
+2025-07-10T15:03:01.2045409Z   fetch-tags: false
+2025-07-10T15:03:01.2046207Z   show-progress: true
+2025-07-10T15:03:01.2046622Z   lfs: false
+2025-07-10T15:03:01.2046887Z   submodules: false
+2025-07-10T15:03:01.2047137Z   set-safe-directory: true
+2025-07-10T15:03:01.2047853Z ##[endgroup]
+2025-07-10T15:03:01.3102949Z Syncing repository: smojox/ticket-issuance
+2025-07-10T15:03:01.3104332Z ##[group]Getting Git version info
+2025-07-10T15:03:01.3104808Z Working directory is '/home/runner/work/ticket-issuance/ticket-issuance'
+2025-07-10T15:03:01.3105805Z [command]/usr/bin/git version
+2025-07-10T15:03:01.3137638Z git version 2.49.0
+2025-07-10T15:03:01.3163060Z ##[endgroup]
+2025-07-10T15:03:01.3176370Z Temporarily overriding HOME='/home/runner/work/_temp/fccae67c-be24-4862-948f-dd9e650df5d6' before making global git config changes
+2025-07-10T15:03:01.3177297Z Adding repository directory to the temporary git global config as a safe directory
+2025-07-10T15:03:01.3189069Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ticket-issuance/ticket-issuance
+2025-07-10T15:03:01.3220401Z Deleting the contents of '/home/runner/work/ticket-issuance/ticket-issuance'
+2025-07-10T15:03:01.3223626Z ##[group]Initializing the repository
+2025-07-10T15:03:01.3227926Z [command]/usr/bin/git init /home/runner/work/ticket-issuance/ticket-issuance
+2025-07-10T15:03:01.3284120Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-07-10T15:03:01.3285304Z hint: is subject to change. To configure the initial branch name to use in all
+2025-07-10T15:03:01.3286095Z hint: of your new repositories, which will suppress this warning, call:
+2025-07-10T15:03:01.3286507Z hint:
+2025-07-10T15:03:01.3286829Z hint: 	git config --global init.defaultBranch <name>
+2025-07-10T15:03:01.3287641Z hint:
+2025-07-10T15:03:01.3288202Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-07-10T15:03:01.3288743Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-07-10T15:03:01.3289253Z hint:
+2025-07-10T15:03:01.3289692Z hint: 	git branch -m <name>
+2025-07-10T15:03:01.3290580Z Initialized empty Git repository in /home/runner/work/ticket-issuance/ticket-issuance/.git/
+2025-07-10T15:03:01.3300254Z [command]/usr/bin/git remote add origin https://github.com/smojox/ticket-issuance
+2025-07-10T15:03:01.3330660Z ##[endgroup]
+2025-07-10T15:03:01.3331412Z ##[group]Disabling automatic garbage collection
+2025-07-10T15:03:01.3335688Z [command]/usr/bin/git config --local gc.auto 0
+2025-07-10T15:03:01.3363201Z ##[endgroup]
+2025-07-10T15:03:01.3363985Z ##[group]Setting up auth
+2025-07-10T15:03:01.3370718Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-07-10T15:03:01.3400186Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-07-10T15:03:01.3658228Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-07-10T15:03:01.3686987Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-07-10T15:03:01.3898756Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-07-10T15:03:01.3931274Z ##[endgroup]
+2025-07-10T15:03:01.3931936Z ##[group]Fetching the repository
+2025-07-10T15:03:01.3946651Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +22c113680dca2b8915ab4fb16e758fda17577cc1:refs/remotes/origin/main
+2025-07-10T15:03:02.0248608Z From https://github.com/smojox/ticket-issuance
+2025-07-10T15:03:02.0250523Z  * [new ref]         22c113680dca2b8915ab4fb16e758fda17577cc1 -> origin/main
+2025-07-10T15:03:02.0282352Z ##[endgroup]
+2025-07-10T15:03:02.0282785Z ##[group]Determining the checkout info
+2025-07-10T15:03:02.0285035Z ##[endgroup]
+2025-07-10T15:03:02.0290057Z [command]/usr/bin/git sparse-checkout disable
+2025-07-10T15:03:02.0329614Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-07-10T15:03:02.0355608Z ##[group]Checking out the ref
+2025-07-10T15:03:02.0359962Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-07-10T15:03:02.0645722Z Switched to a new branch 'main'
+2025-07-10T15:03:02.0648255Z branch 'main' set up to track 'origin/main'.
+2025-07-10T15:03:02.0655351Z ##[endgroup]
+2025-07-10T15:03:02.0690544Z [command]/usr/bin/git log -1 --format=%H
+2025-07-10T15:03:02.0710983Z 22c113680dca2b8915ab4fb16e758fda17577cc1
