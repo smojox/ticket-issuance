@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme -->
-    <style name="Theme.CEOTicketIssuance" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Essential colors only -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/secondary</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="colorError">@color/error</item>
-        <item name="colorOnError">@color/white</item>
-        
-        <!-- Status bar -->
+    <!-- Base application theme for Compose -->
+    <style name="Theme.CEOTicketIssuance" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Basic theme for Compose apps -->
+        <item name="android:colorBackground">@color/background</item>
         <item name="android:statusBarColor">@color/primary_dark</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
     </style>

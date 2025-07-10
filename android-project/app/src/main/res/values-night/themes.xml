@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Dark theme -->
-    <style name="Theme.CEOTicketIssuance" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Essential dark theme colors -->
-        <item name="colorPrimary">@color/primary_light</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <item name="colorSecondary">@color/secondary_light</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <item name="colorError">@color/error</item>
-        <item name="colorOnError">@color/white</item>
-        
-        <!-- Status bar -->
+    <!-- Dark theme for Compose -->
+    <style name="Theme.CEOTicketIssuance" parent="android:Theme.Material.NoActionBar">
+        <!-- Basic dark theme for Compose apps -->
+        <item name="android:colorBackground">@color/dark_gray</item>
         <item name="android:statusBarColor">@color/primary_dark</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
     </style>
